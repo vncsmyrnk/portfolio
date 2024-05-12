@@ -1,3 +1,6 @@
+![CI](https://github.com/vncsmyrnk/portfolio/actions/workflows/ci.yml/badge.svg)
+![Release](https://github.com/vncsmyrnk/portfolio/actions/workflows/release.yml/badge.svg)
+
 # My portfolio
 
 All my skills and accomplishments showcased in one place
