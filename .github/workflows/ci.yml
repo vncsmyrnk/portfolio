@@ -28,6 +28,6 @@ jobs:
         with:
           name: app
           path: |
-            dist
-            !dist/**/*.md
+            ./app/dist
+            !./app/dist/**/*.md
 
