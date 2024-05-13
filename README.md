@@ -3,7 +3,9 @@
 
 # My portfolio
 
-All my skills and accomplishments showcased in one place
+All my skills and accomplishments showcased in one place.
+
+[Check it out!](https://vncsmyrnk.github.io/portfolio/)
 
 ## Run locally
 
