@@ -1,7 +1,10 @@
 import './App.css';
 import Project from './Project';
+import { useInView } from 'react-intersection-observer'
 
 function App() {
+  const [refProjects, inViewProjects] = useInView({ threshold: 0.5 })
+
   const codeStringRestaurant = `[...]
 bp = Blueprint('bp_ingrediente', __name__)
 
@@ -32,7 +35,7 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
         <div className="header-section bg-white z-10 fixed top-0 right-0 left-0 pb-2 pr-[15%] pl-[15%]">
           <nav>
             <div class="flex flex-wrap items-center justify-between mx-auto pt-4">
-              <span class="self-center text-2xl font-semibold whitespace-nowrap">~</span>
+              <span class="self-center text-4xl font-semibold whitespace-nowrap">~</span>
               <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li>
@@ -42,7 +45,7 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
                     <a href="#projects" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
                   </li>
                   <li>
-                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Experience</a>
+                    <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">AI Projects</a>
                   </li>
                   <li>
                     <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About me</a>
@@ -73,11 +76,13 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
         </div>
       </div>
       <div className="projects-page md:h-screen flex flex-col justify-center" id="projects">
-        <div className="projects-section page-section pr-[5%] pl-[5%]">
-          <p className="text-6xl font-bold mt-[60px] md:mt-0 md:mt-0">Projects</p>
-          <div className="project-samples grid grid-cols-1 md:grid-cols-2 gap-4 mt-[5%] mx-2">
-            <Project className="project-sample project-python w-full" name="Restaurant integration API" description={descriptionRestaurant} language="python" codeString={codeStringRestaurant} linkUrl="https://github.com/Sistema-de-integracao-em-restaurante/api" linkDescription="See on GitHub" />
-            <Project className="project-sample project-java w-full" name="Work Time calculator API" description={descriptionWTC} language="java" codeString={codeStringWTC} linkUrl="https://github.com/clocked-app/calculations-api" linkDescription="See on GitHub" />
+        <div ref={refProjects} className={inViewProjects ? "animate-[upDown_1s_ease-out]" : "invisible"}>
+          <div className="projects-section page-section pr-[5%] pl-[5%]">
+            <p className="text-6xl font-bold mt-[60px] md:mt-0 md:mt-0">Projects</p>
+            <div className="project-samples grid grid-cols-1 md:grid-cols-2 gap-4 mt-[5%] mx-2">
+              <Project className="project-sample project-python w-full" name="Restaurant integration API" description={descriptionRestaurant} language="python" codeString={codeStringRestaurant} linkUrl="https://github.com/Sistema-de-integracao-em-restaurante/api" linkDescription="See on GitHub" />
+              <Project className="project-sample project-java w-full" name="Work Time calculator API" description={descriptionWTC} language="java" codeString={codeStringWTC} linkUrl="https://github.com/clocked-app/calculations-api" linkDescription="See on GitHub" />
+            </div>
           </div>
         </div>
       </div>
