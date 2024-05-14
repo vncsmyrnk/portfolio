@@ -3,9 +3,30 @@ import Project from './Project';
 import DarkModeSwitch from './DarkModeSwitch';
 import { useInView } from 'react-intersection-observer'
 import { FaLinkedin, FaEnvelope, FaPhone, FaGithub, FaReact } from 'react-icons/fa';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 function App() {
   const [refProjects, inViewProjects] = useInView({ threshold: 0.5 })
+
+  const carouselResponsivity = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
   const projects = [
     {
@@ -23,6 +44,7 @@ def get_ingredientes():
 [...]`,
       linkUrl: 'https://github.com/Sistema-de-integracao-em-restaurante/api',
       linkDescription: 'See on GitHub',
+      chips: ['python', 'flask', 'SQLAlchemy']
     },
     {
       name: 'Work Time calculator API',
@@ -40,6 +62,7 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
 [...]`,
       linkUrl: 'https://github.com/clocked-app/calculations-api',
       linkDescription: 'See on GitHub',
+      chips: ['java', 'spring boot']
     },
   ];
 
@@ -99,10 +122,12 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
         <div ref={refProjects} className={inViewProjects ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="projects-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">Projects</p>
-            <div className="project-samples grid grid-cols-1 md:grid-cols-2 gap-4 mt-[5%] mx-2 mb-2">
-              {projects.map((project) => {
-                return <Project className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} />
-              })}
+            <div className="project-samples mt-[5%] mx-2 mb-2">
+              <Carousel responsive={carouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000}>
+                {projects.map((project) => {
+                  return <Project className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} chips={project.chips} />
+                })}
+              </Carousel>
             </div>
           </div>
         </div>
