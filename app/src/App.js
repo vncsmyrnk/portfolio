@@ -5,10 +5,12 @@ import { useInView } from 'react-intersection-observer'
 import { FaLinkedin, FaEnvelope, FaPhone, FaGithub, FaReact } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { useTranslation } from "react-i18next";
 
 function App() {
   const [refProjects, inViewProjects] = useInView({ threshold: 0.5 })
   const [refAbout, inViewAbout] = useInView({ threshold: 0.5 })
+  const { t } = useTranslation();
 
   const carouselResponsivity = {
     superLargeDesktop: {
@@ -33,7 +35,7 @@ function App() {
 
   const projects = [
     {
-      name: 'Restaurant integration API',
+      name: t('project_restaurant_name'),
       description: 'This API aims to centralize information related to restaurant orders in just one place, providing webhooks so that other systems can make decisions based on order activity',
       language: 'python',
       codeString: `[...]

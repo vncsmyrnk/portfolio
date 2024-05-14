@@ -5,6 +5,7 @@ import '@fontsource/ubuntu';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './i18n/config.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
