@@ -176,7 +176,7 @@ def analyze():
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">About me</p>
             <div className="about-content mt-[5%] flex flex-col items-center">
               <div className="p-6 w-full md:w-2/6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
-                <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="A picture of Vinicius" />
+                <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
                 <h5 className="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
                 <div className="mt-2 flex flex-wrap justify-center">
                   {mySkills.map((skill, i) => {
