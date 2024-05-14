@@ -40,24 +40,27 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
               <div class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li>
-                    <a href="#home" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+                    <a href="#home" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110" aria-current="page">Home</a>
                   </li>
                   <li>
-                    <a href="#projects" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                    <a href="#projects" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">Projects</a>
                   </li>
                   <li>
-                    <a href="#ai-projects" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">AI Projects</a>
+                    <a href="#ai-projects" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">AI Projects</a>
                   </li>
                   <li>
-                    <a href="#about-me" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About me</a>
+                    <a href="#about-me" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">About me</a>
                   </li>
                   <li>
-                    <a href="#contact" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                    <a href="#contact" class="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">Contact</a>
                   </li>
                   <li>
                     <DarkModeSwitch />
                   </li>
                 </ul>
+              </div>
+              <div className="sm:hidden">
+                <DarkModeSwitch />
               </div>
             </div>
           </nav>
@@ -65,15 +68,15 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
         <div className="content-section flex flex-col grow justify-center ml-8 pt-[100px] md:pt-0 mr-[15%] ml-[20%]">
           <div className="title-section text-right animate-[slideLeft_1s_ease-out]">
             <p className="main-sentence text-2xl md:text-7xl font-bold">Powering the digital world from behind the scenes</p>
-            <p className="description text-gray-800 dark:text-gray-500 text-xl md:text-4xl mt-4">I build scalable, secure, and seamless backend infrastructures</p>
+            <p className="description text-gray-800 dark:text-gray-300 text-xl md:text-4xl mt-4">I build scalable, secure, and seamless backend infrastructures</p>
           </div>
         </div>
         <div className="description-section mt-8 grow justify-center pr-5 md:pr-[20%] ml-5 md:ml-[15%] animate-[slideRight_1s_ease-out]">
-          <div className="description-text text-xl text-gray-800 dark:text-gray-300 pt-8 md:pt-0">
-            <p>I am <span className="underline">Vinicius Mayrink</span> and I am a backend developer specialized in crafting robust APIs using an arsenal of tools including Python, Java, and Node.js. With a deep understanding of backend principles and concepts, I am proficient in implementing SOLID principles, RESTful architecture, and clean code practices to engineer scalable and efficient solutions.</p>
+          <div className="description-text text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
+            <p>I am <span className="underline">Vinicius Mayrink</span> and I am a backend developer specialized in crafting robust APIs using an arsenal of tools including <span className="text-blue-700 dark:text-blue-400 font-semibold">Python</span>, <span className="text-blue-700 dark:text-blue-400 font-semibold">Java</span>, and <span className="text-blue-700 dark:text-blue-400 font-semibold">Node.js</span>. With a deep understanding of backend principles and concepts, I am proficient in implementing <i>SOLID</i> principles, <i>RESTful</i> architecture, and <i>clean code</i> practices to engineer <strong>scalable</strong> and <strong>efficient</strong> solutions.</p>
           </div>
           <a href="#projects">
-            <button class="mt-8 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+            <button class="mt-8 bg-blue-500 dark:bg-blue-700 hover:bg-blue-400 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 dark:border-blue-900 hover:border-blue-500 dark:hover:border-blue-700 rounded transition duration-500 hover:scale-110">
               Check it out
             </button>
           </a>
