@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@visx/visx": "^3.10.2",
     "@visx/wordcloud": "^3.3.0",
+    "flag-icons": "^7.2.1",
     "framer-motion": "^11.1.9",
     "i18next": "^23.11.4",
     "i18next-http-backend": "^2.5.1",

@@ -6,6 +6,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './i18n/config.js'
+import '/node_modules/flag-icons/css/flag-icons.min.css';
+import 'react-multi-carousel/lib/styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

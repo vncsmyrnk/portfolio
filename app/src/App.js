@@ -1,6 +1,7 @@
 import './App.css';
 import Project from './Project';
 import DarkModeSwitch from './DarkModeSwitch';
+import LanguageSwitch from './LanguageSwitch';
 import { useInView } from 'react-intersection-observer'
 import { FaLinkedin, FaEnvelope, FaPhone, FaGithub, FaReact } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
@@ -133,10 +134,14 @@ def analyze():
                   <li>
                     <DarkModeSwitch />
                   </li>
+                  <li>
+                    <LanguageSwitch />
+                  </li>
                 </ul>
               </div>
-              <div className="sm:hidden">
-                <DarkModeSwitch />
+              <div className="sm:hidden flex">
+                <DarkModeSwitch className="mx-3" />
+                <LanguageSwitch />
               </div>
             </div>
           </nav>

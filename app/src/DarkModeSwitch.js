@@ -1,4 +1,4 @@
-function DarkModeSwitch() {
+function DarkModeSwitch(props) {
   const toggleToDarkMode = () => {
     document.documentElement.classList.add('dark')
   }
@@ -8,7 +8,7 @@ function DarkModeSwitch() {
   }
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className={"flex flex-col justify-center " + props.className}>
       <label className="relative cursor-pointer p-2" htmlFor="light-switch">
         <span onClick={toggleToDarkMode}>
           <svg className="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
