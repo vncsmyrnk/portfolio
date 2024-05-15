@@ -37,8 +37,8 @@
     "title": "Sobre mim",
     "position": "Software/Back-end Engineer",
     "actions": {
-      "check-projects": "Meus projetos",
-      "contact": "Contato"
+      "resume-english": "CV (inglês)",
+      "resume-portuguese": "CV (português)"
     },
     "paragraph-1": "APIs e Web APIs são <underline>essenciais</underline> para integrações digitais, servindo como o ponto central que possibilita a comunicação e colaboração contínuas entre sistemas e serviços diversos. Essas APIs fornecem interfaces padronizadas que <underline>permitem</underline> que diferentes aplicativos interajam, compartilhem dados e executem funções pela web.",
     "paragraph-2": "Minha paixão é criar essas APIs REST com ferramentas como Python, Node.js, Java e PHP. Essa é a área para o qual me especializo e me desenvolvo a cada dia. Acredito que práticas de <highlight>DevOps</highlight>, <highlight>DevSecOps</highlight>, <highlight>CI/CD</highlight> e <highlight>Frameworks ágeis</highlight> são essenciais para que as aplicações sejam desenvolvidas de forma colaborativa e organizada, reduzindo significativamente problemas e bugs mesmo antes de chegarem aos ambientes de produção",
