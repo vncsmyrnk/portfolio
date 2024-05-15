@@ -60,7 +60,7 @@ function App() {
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/specialization/66L5N4AT8M8M',
-      tags: ['software engineering', 'devops', 'ci/cd']
+      tags: ['software engineering', 'devops', 'ci/cd', 'microservices', 'git', 'docker', 'testing']
     },
     {
       name: 'CloudAcademy DevSecOps, DevOps and Software Engineering',
@@ -74,14 +74,14 @@ function App() {
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/verify/UAB7NFB4VKEJ',
-      tags: ['software engineering', 'microservices', 'docker', 'api']
+      tags: ['software engineering', 'microservices', 'docker', 'api', 'aws lambda', 'testing']
     },
     {
       name: 'Cloud Academy Building and Deploying a Cloud Native Application',
       img: 'cloudacademy-logo.png',
       imgDark: 'cloudacademy-logo-dark.png',
       url: 'https://certificates.cloudacademy.com/0b1276b17c1933574ccec3a3cf1fefb3021796a2.pdf',
-      tags: ['software engineering', 'microservices', 'devops', 'docker', 'linux']
+      tags: ['software engineering', 'microservices', 'devops', 'docker', 'linux', 'kubernetes']
     },
     {
       name: 'IBM Continuous Integration and Continuous Delivery (CI/CD)',
@@ -94,7 +94,7 @@ function App() {
     {
       name: 'Mathematics for Machine Learning and Data Science',
       img: 'deeplearningai-logo.png',
-      imgDark: 'deeplearningai-logo.png',
+      imgDark: 'deeplearningai-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/specialization/4UJ8AS7XCHJV',
       tags: ['machine learning', 'calculus', 'data science', 'statistics', 'probabilities', 'linear algebra']
     },
@@ -110,7 +110,14 @@ function App() {
       img: 'cloudacademy-logo.png',
       imgDark: 'cloudacademy-logo-dark.png',
       url: 'https://certificates.cloudacademy.com/28395c94b90526d5a05d7de61f5dc42509da5a7e.pdf',
-      tags: ['software engineering', 'owasp', 'grafana', 'monitoring']
+      tags: ['software engineering', 'aws', 'cloud', 'aws codepipeline', 'aws codebuild']
+    },
+    {
+      name: 'IBM Monitoring and Observability for Development and DevOps',
+      img: 'ibm-logo.png',
+      imgDark: 'ibm-logo-white.png',
+      url: 'https://www.coursera.org/account/accomplishments/verify/SVKX7AQPSXE2',
+      tags: ['software engineering', 'devops', 'grafana', 'monitoring', 'prometheus']
     },
     
   ];
@@ -248,8 +255,8 @@ def analyze():
         <div ref={refAbout} className={inViewAbout ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="about-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="about.title" /></p>
-            <div className="about-content mt-[3%] flex flex-col md:flex-row items-center">
-              <div className="about-card w-full md:w-2/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
+            <div className="about-content mt-[2%] flex flex-col md:flex-row items-center">
+              <div className="about-card w-full md:w-3/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
                 <h5 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
                 <p className="text-gray-800 dark:text-gray-500"><Trans i18nKey="about.position" /></p>
@@ -260,17 +267,28 @@ def analyze():
                     </div>
                   })}
                 </div>
+                <div className="about-actions hidden md:flex justify-center">
+                  <a href="#projects">
+                    <button className="mt-5 mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
+                      <Trans i18nKey="about.actions.check-projects" />
+                    </button>
+                  </a>
+                  <a href="#contact">
+                    <button className="mt-5 mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
+                      <Trans i18nKey="about.actions.contact" />
+                    </button>
+                  </a>
+                </div>
               </div>
               <div className="about-description w-5/6 mr-[10%] ml-[10%] md:mr-[2%] md:ml-[2%] text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
                 <p><Trans i18nKey="about.paragraph-1" components={{ underline: <span className="underline" />, strong: <strong /> }} /></p>
                 <br />
                 <p><Trans i18nKey="about.paragraph-2" components={{ highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
-                <br />
               </div>
             </div>
-            <div className="mt-5">
+            <div className="mt-7">
               <p className="mr-[10%] ml-[10%] md:mr-0 md:ml-0 text-xl md:text-3xl font-bold text-center mb-4"><Trans i18nKey="about.certifications.title" /></p>
-              <Carousel responsive={certificatesCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
+              <Carousel responsive={certificatesCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={8000} swipeable={false}>
                 {certificates.map((certificate, i) => {
                   return <Certification key={i} name={certificate.name} url={certificate.url} chips={certificate.tags} img={certificate.img} imgDark={certificate.imgDark} />
                 })}
@@ -297,13 +315,13 @@ def analyze():
           <div className="contact-section page-section mr-[5%] ml-[5%] h-2/5 flex flex-col justify-self-center items-center">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="contact.title" /></p>
             <div className="platforms mt-5 flex">
-              <a href="https://www.linkedin.com/in/vncsmyrnk">
+              <a href="https://www.linkedin.com/in/vncsmyrnk" target="_blank" rel="noreferrer">
                 <FaLinkedin className="mx-2 md:mx-5" color="#334155" size="4rem" />
               </a>
-              <a href="mailto:vmayrink12@gmail.com">
+              <a href="mailto:vmayrink12@gmail.com" target="_blank" rel="noreferrer">
                 <FaEnvelope className="mx-2 md:mx-5" color="#334155" size="4rem" />
               </a>
-              <a href="https://github.com/vncsmyrnk">
+              <a href="https://github.com/vncsmyrnk" target="_blank" rel="noreferrer">
                 <FaGithub className="mx-2 md:mx-5" color="#334155" size="4rem" />
               </a>
               <a href="tel:+5531984805330">

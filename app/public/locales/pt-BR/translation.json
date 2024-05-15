@@ -10,7 +10,7 @@
     "description": "Eu construo infraestruturas de backend escaláveis, seguras e integradas"
   },
   "description": {
-    "text": "Eu sou <underline>Vinicius Mayrink</underline> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <highlight>Python</highlight>, <highlight>Java</highlight> e <highlight>Node.js</highlight>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escláveis</strong> e <strong>eficientes</strong>",
+    "text": "Eu sou <underline>Vinicius Mayrink</underline> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <highlight>Python</highlight>, <highlight>Java</highlight> e <highlight>Node.js</highlight>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escaláveis</strong> e <strong>eficientes</strong>",
     "button": "Veja mais"
   },
   "projects": {
@@ -36,6 +36,10 @@
   "about": {
     "title": "Sobre mim",
     "position": "Software/Back-end Engineer",
+    "actions": {
+      "check-projects": "Meus projetos",
+      "contact": "Contato"
+    },
     "paragraph-1": "APIs e Web APIs são <underline>essenciais</underline> para integrações digitais, servindo como o ponto central que possibilita a comunicação e colaboração contínuas entre sistemas e serviços diversos. Essas APIs fornecem interfaces padronizadas que <underline>permitem</underline> que diferentes aplicativos interajam, compartilhem dados e executem funções pela web.",
     "paragraph-2": "Minha paixão é criar essas APIs REST com ferramentas como Python, Node.js, Java e PHP. Essa é a área para o qual me especializo e me desenvolvo a cada dia. Acredito que práticas de <highlight>DevOps</highlight>, <highlight>DevSecOps</highlight>, <highlight>CI/CD</highlight> e <highlight>Frameworks ágeis</highlight>são essenciais para que as aplicações sejam desenvolvidas de forma colaborativa e organizada, reduzindo significativamente problemas e bugs mesmo antes de chegarem aos ambientes de produção",
     "certifications": {
