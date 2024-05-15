@@ -9,7 +9,7 @@ function Project(props) {
       <div className="chips mt-4">
         {props.chips && props.chips.map((chip, i) => {
           return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-gray-200 dark:text-white uppercase bg-gray-500 dark:bg-gray-900 rounded-md select-none whitespace-nowrap">
-            <span className="">{chip}</span>
+            <span>{chip}</span>
           </div>
         })}
       </div>
