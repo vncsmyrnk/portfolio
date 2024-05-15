@@ -36,8 +36,8 @@ function App() {
 
   const projects = [
     {
-      name: t('project_restaurant_name'),
-      description: 'This API aims to centralize information related to restaurant orders in just one place, providing webhooks so that other systems can make decisions based on order activity',
+      name: t('projects.restaurant.title'),
+      description: t('projects.restaurant.description'),
       language: 'python',
       codeString: `[...]
 bp = Blueprint('bp_ingrediente', __name__)
@@ -49,12 +49,12 @@ def get_ingredientes():
         return jsonify([i.serialize() for i in ingredientes])
 [...]`,
       linkUrl: 'https://github.com/Sistema-de-integracao-em-restaurante/api',
-      linkDescription: 'See on GitHub',
+      linkDescription: t('projects.button-to-github'),
       chips: ['rest api', 'python', 'flask', 'sqlalchemy', 'docker']
     },
     {
-      name: 'Work Time calculator API',
-      description: 'This is an app built with Spring Boot and Gradle to calculate work time for a given parameter inputs',
+      name: t('projects.work-time-calculator.title'),
+      description: t('projects.work-time-calculator.description'),
       language: 'java',
       codeString: `[...]
 @PostMapping(value = "day")
@@ -67,12 +67,12 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
 }
 [...]`,
       linkUrl: 'https://github.com/clocked-app/calculations-api',
-      linkDescription: 'See on GitHub',
+      linkDescription: t('projects.button-to-github'),
       chips: ['rest api', 'java', 'spring boot', 'docker']
     },
     {
-      name: 'Sentiment Analysis in Portuguese Sentences',
-      description: 'This project aims at analyzing and predicting sentiments associated with texts written in the Portuguese language through NLP',
+      name: t('projects.sentiment-analysis.title'),
+      description: t('projects.sentiment-analysis.description'),
       language: 'python',
       codeString: `[...]
 @app.post("/analyze")
@@ -86,12 +86,12 @@ def analyze():
     return distilled_student_sentiment_classifier(sentence_to_analyze)
 [...]`,
       linkUrl: 'https://github.com/vncsmyrnk/sentiment-analysis-pt',
-      linkDescription: 'See on GitHub',
+      linkDescription: t('projects.button-to-github'),
       chips: ['nlp', 'ai', 'rest api', 'python', 'tensorflow']
     },
     {
-      name: 'Doar Digital API',
-      description: 'REST API responsible for managing donation information. This API was built with NodeJS and Koa.js. The application expects a PostgreSQL database. Docker was used to run the app services',
+      name: t('projects.digital-donations.title'),
+      description: t('projects.digital-donations.description'),
       language: 'javascript',
       codeString: `[...]
 @app.post("/analyze")
@@ -105,7 +105,7 @@ def analyze():
     return distilled_student_sentiment_classifier(sentence_to_analyze)
 [...]`,
       linkUrl: 'https://github.com/doardigital/api',
-      linkDescription: 'See on GitHub',
+      linkDescription: t('projects.button-to-github'),
       chips: ['rest api', 'node.js', 'koa.js', 'docker']
     },
   ];
@@ -154,11 +154,11 @@ def analyze():
         </div>
         <div className="description-section mt-8 grow justify-center pr-5 md:pr-[20%] ml-5 md:ml-[15%] animate-[slideRight_1s_ease-out]">
           <div className="description-text text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
-            <p><Trans i18nKey="description_section.text" components={{ span_name: <span className="underline" />, span_language: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+            <p><Trans i18nKey="description.text" components={{ span_name: <span className="underline" />, span_language: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
           </div>
           <a href="#projects">
             <button className="mt-8 bg-blue-500 dark:bg-blue-700 hover:bg-blue-400 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 dark:border-blue-900 hover:border-blue-500 dark:hover:border-blue-700 rounded transition duration-500 hover:scale-110">
-              <Trans i18nKey="description_section.button" />
+              <Trans i18nKey="description.button" />
             </button>
           </a>
         </div>
@@ -166,7 +166,7 @@ def analyze():
       <div className="projects-page md:h-screen flex flex-col justify-center" id="projects">
         <div ref={refProjects} className={inViewProjects ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="projects-section page-section mr-[5%] ml-[5%]">
-            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">Projects</p>
+            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="projects.title" /></p>
             <div className="project-samples mt-[5%] mx-2 mb-2">
               <Carousel responsive={carouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
                 {projects.map((project, i) => {
@@ -180,12 +180,12 @@ def analyze():
       <div className="about-page md:h-screen flex flex-col justify-center" id="about-me">
         <div ref={refAbout} className={inViewAbout ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="about-section page-section mr-[5%] ml-[5%]">
-            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">About me</p>
+            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="about.title" /></p>
             <div className="about-content mt-[5%] flex flex-col items-center">
               <div className="p-6 w-full md:w-2/6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
                 <h5 className="mb-1 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
-                <p className="text-gray-800 dark:text-gray-500">Software/Back-end Engineer</p>
+                <p className="text-gray-800 dark:text-gray-500"><Trans i18nKey="about.position" /></p>
                 <div className="mt-4 flex flex-wrap justify-center">
                   {mySkills.map((skill, i) => {
                     return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-gray-200 dark:text-white uppercase bg-gray-500 dark:bg-gray-900 rounded-md select-none whitespace-nowrap">
@@ -195,7 +195,7 @@ def analyze():
                 </div>
               </div>
               <div className="about-description h-16 mt-[4%] mr-[10%] ml-[10%] text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
-                <p>I love creating REST APIs in Python, Node.js, Java, and PHP. I use principles like SOLID, clean architecture, and Design Patterns as premises for creating stable, scalable, and distributed applications. I believe that <span className="text-blue-700 dark:text-blue-400 font-semibold">DevOps</span>, <span className="text-blue-700 dark:text-blue-400 font-semibold">DevSecOps</span>, and <span className="text-blue-700 dark:text-blue-400 font-semibold">CI/CD</span> practices are essential for applications to be developed collaboratively and in an organized manner, significantly reducing potential problems and bugs even before they reach production environments</p>
+                <p><Trans i18nKey="about.text" components={{ span: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ def analyze():
       </div>
       <div className="contact-page h-screen flex flex-col justify-end" id="contact">
           <div className="contact-section page-section mr-[5%] ml-[5%] h-2/5 flex flex-col justify-self-center items-center">
-            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">Contact me on</p>
+            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="contact.title" /></p>
             <div className="platforms mt-5 flex">
               <a href="https://www.linkedin.com/in/vncsmyrnk">
                 <FaLinkedin className="mx-2 md:mx-5" color="#334155" size="4rem" />
@@ -220,7 +220,7 @@ def analyze():
             </div>
           </div>
           <div className="footer-section page-section w-full bg-gray-300 dark:bg-gray-950 mt-[5%] flex flex-col h-1/6 items-center justify-center">
-            <p className="dark:text-gray-700">This website is powered by</p>
+            <p className="dark:text-gray-700"><Trans i18nKey="footer.website-tools" /></p>
             <div className="footer-tools flex mt-2">
               <FaReact className="mx-2" color="#334155" size="2rem" />
               <a href="https://github.com/vncsmyrnk/portfolio">
