@@ -256,7 +256,7 @@ def analyze():
           <div className="about-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="about.title" /></p>
             <div className="about-content mt-[2%] flex flex-col md:flex-row items-center">
-              <div className="about-card w-full md:w-3/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
+              <div className="about-card w-full md:w-2/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
                 <h5 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
                 <p className="text-gray-800 dark:text-gray-500"><Trans i18nKey="about.position" /></p>
@@ -303,7 +303,7 @@ def analyze():
         <div ref={refProjects} className={inViewProjects ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="projects-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="projects.title" /></p>
-            <div className="project-samples mt-[5%] mx-2 mb-2">
+            <div className="project-samples mt-[2%] mx-2 mb-2">
               <Carousel responsive={projectsCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
                 {projects.map((project, i) => {
                   return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} chips={project.chips} />
