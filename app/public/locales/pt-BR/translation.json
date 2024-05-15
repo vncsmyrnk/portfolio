@@ -1,3 +1,17 @@
 {
-  "project_restaurant_name": "API de integrações em restaurantes"
+  "project_restaurant_name": "API de integrações em restaurantes",
+  "header": {
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre mim",
+    "contact": "Contato"
+  },
+  "main_sentence": {
+    "title": "Impulsionando o mundo digital através dos bastidores",
+    "description": "Eu construo infraestruturas de backend escaláveis, seguras e integradas"
+  },
+  "description_section": {
+    "text": "Eu sou <span_name>Vinicius Mayrink</span_name> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <span_language>Python</span_language>, <span_language>Java</span_language> e <span_language>Node.js</span_language>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escláveis</strong> e <strong>eficientes</strong>",
+    "button": "Veja mais"
+  }
 }

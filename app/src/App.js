@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { FaLinkedin, FaEnvelope, FaPhone, FaGithub, FaReact } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from 'react-i18next';
 
 function App() {
   const [refProjects, inViewProjects] = useInView({ threshold: 0.5 })
@@ -112,23 +112,23 @@ def analyze():
   return (
     <div className="App relative bg-white dark:bg-gray-900 text-black dark:text-white">
       <div className="main-page h-screen flex flex-col" id="home">
-        <div className="header-section bg-white dark:bg-gray-900 z-10 fixed top-0 right-0 left-0 pb-2 pr-[15%] pl-[15%]">
+        <div className="header-section bg-white dark:bg-gray-900 z-[1001] fixed top-0 right-0 left-0 pb-2 pr-[15%] pl-[15%]">
           <nav>
             <div className="flex flex-wrap items-center justify-between mx-auto pt-4">
               <span className="self-center text-4xl font-semibold whitespace-nowrap">~</span>
               <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li>
-                    <a href="#home" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110" aria-current="page">Home</a>
+                    <a href="#home" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110" aria-current="page"><Trans i18nKey="header.home"/></a>
                   </li>
                   <li>
-                    <a href="#projects" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">Projects</a>
+                    <a href="#projects" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.projects"/></a>
                   </li>
                   <li>
-                    <a href="#about-me" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">About me</a>
+                    <a href="#about-me" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.about"/></a>
                   </li>
                   <li>
-                    <a href="#contact" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110">Contact</a>
+                    <a href="#contact" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.contact"/></a>
                   </li>
                   <li>
                     <DarkModeSwitch />
@@ -143,17 +143,17 @@ def analyze():
         </div>
         <div className="content-section flex flex-col grow justify-center ml-8 pt-[100px] md:pt-0 mr-5 md:mr-[15%] ml-5 md:ml-[20%]">
           <div className="title-section text-right animate-[slideLeft_1s_ease-out]">
-            <p className="main-sentence text-4xl md:text-7xl font-bold">Powering the digital world from behind the scenes</p>
-            <p className="description text-gray-800 dark:text-gray-300 text-2xl md:text-4xl mt-4">I build scalable, secure, and seamless backend infrastructures</p>
+            <p className="main-sentence text-4xl md:text-7xl font-bold"><Trans i18nKey="main_sentence.title" /></p>
+            <p className="description text-gray-800 dark:text-gray-300 text-2xl md:text-4xl mt-4"><Trans i18nKey="main_sentence.description" /></p>
           </div>
         </div>
         <div className="description-section mt-8 grow justify-center pr-5 md:pr-[20%] ml-5 md:ml-[15%] animate-[slideRight_1s_ease-out]">
           <div className="description-text text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
-            <p>I am <span className="underline">Vinicius Mayrink</span> and I am a backend developer specialized in crafting robust APIs using an arsenal of tools including <span className="text-blue-700 dark:text-blue-400 font-semibold">Python</span>, <span className="text-blue-700 dark:text-blue-400 font-semibold">Java</span>, and <span className="text-blue-700 dark:text-blue-400 font-semibold">Node.js</span>. With a deep understanding of backend principles and concepts, I am proficient in implementing SOLID principles, RESTful architecture, and clean code practices to engineer <strong>scalable</strong> and <strong>efficient</strong> solutions.</p>
+            <p><Trans i18nKey="description_section.text" components={{ span_name: <span className="underline" />, span_language: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
           </div>
           <a href="#projects">
             <button className="mt-8 bg-blue-500 dark:bg-blue-700 hover:bg-blue-400 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 dark:border-blue-900 hover:border-blue-500 dark:hover:border-blue-700 rounded transition duration-500 hover:scale-110">
-              Check it out
+              <Trans i18nKey="description_section.button" />
             </button>
           </a>
         </div>
@@ -179,8 +179,9 @@ def analyze():
             <div className="about-content mt-[5%] flex flex-col items-center">
               <div className="p-6 w-full md:w-2/6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
-                <h5 className="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
-                <div className="mt-2 flex flex-wrap justify-center">
+                <h5 className="mb-1 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
+                <p className="text-gray-800 dark:text-gray-500">Software/Back-end Engineer</p>
+                <div className="mt-4 flex flex-wrap justify-center">
                   {mySkills.map((skill, i) => {
                     return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-gray-200 dark:text-white uppercase bg-gray-500 dark:bg-gray-900 rounded-md select-none whitespace-nowrap">
                       <span className="">{skill}</span>
