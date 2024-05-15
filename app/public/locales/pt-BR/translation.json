@@ -1,0 +1,47 @@
+{
+  "header": {
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre mim",
+    "contact": "Contato"
+  },
+  "main_sentence": {
+    "title": "Impulsionando o mundo digital através dos bastidores",
+    "description": "Eu construo infraestruturas de backend escaláveis, seguras e integradas"
+  },
+  "description": {
+    "text": "Eu sou <span_name>Vinicius Mayrink</span_name> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <span_language>Python</span_language>, <span_language>Java</span_language> e <span_language>Node.js</span_language>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escláveis</strong> e <strong>eficientes</strong>",
+    "button": "Veja mais"
+  },
+  "projects": {
+    "title": "Projetos",
+    "button-to-github": "Veja no GitHub",
+    "restaurant": {
+      "title": "Integração em restaurantes API",
+      "description": "Esta API tem como objetivo centralizar informações relacionadas a pedidos de restaurantes em um único lugar, fornecendo webhooks para que outros sistemas possam tomar decisões com base na atividade de pedidos"
+    },
+    "work-time-calculator": {
+      "title": "Calculador de Tempo Trabalhado API",
+      "description": "Este é um aplicativo construído com Spring Boot e Gradle para calcular o tempo de trabalho para determinados parâmetros de entrada"
+    },
+    "sentiment-analysis": {
+      "title": "Análise de sentimentos em português",
+      "description": "Este projeto tem como objetivo analisar e prever sentimentos associados a textos escritos em língua portuguesa através de NLP (Processamento de Linguagem Natural)"
+    },
+    "digital-donations": {
+      "title": "Doar Digital API",
+      "description": "API REST responsável por gerenciar informações de doação. Esta API foi construída com NodeJS e Koa.js. A aplicação espera um banco de dados PostgreSQL. Docker foi utilizado para executar os serviços da aplicação"
+    }
+  },
+  "about": {
+    "title": "Sobre mim",
+    "position": "Software/Back-end Engineer",
+    "text": "Minha paixão é criar APIs REST em Python, Node.js, Java e PHP Essa é a área para o qual me especializo e me desenvolvo a cada dia. Utilizo princípios como SOLID, arquitetura limpa e padrões de design como premissas para criar aplicações estáveis, escaláveis e distribuídas. Acredito que práticas de <span>DevOps</span>, <span>DevSecOps</span> e <span>CI/CD</span> são essenciais para que as aplicações sejam desenvolvidas de forma colaborativa e organizada, reduzindo significativamente problemas e bugs mesmo antes de chegarem aos ambientes de produção"
+  },
+  "contact": {
+    "title": "Entre em contato"
+  },
+  "footer": {
+    "website-tools": "Este site foi produzido com"
+  }
+}
