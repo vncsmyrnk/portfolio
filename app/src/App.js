@@ -255,8 +255,8 @@ def analyze():
         <div ref={refAbout} className={inViewAbout ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="about-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="about.title" /></p>
-            <div className="about-content mt-[2%] flex flex-col md:flex-row items-center">
-              <div className="about-card w-full md:w-2/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
+            <div className="about-content mt-[1%] flex flex-col md:flex-row items-center">
+              <div className="about-card w-full md:w-2/5 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
                 <h5 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
                 <p className="text-gray-800 dark:text-gray-500"><Trans i18nKey="about.position" /></p>
@@ -267,15 +267,15 @@ def analyze():
                     </div>
                   })}
                 </div>
-                <div className="about-actions hidden md:flex justify-center">
-                  <a href="#projects">
-                    <button className="mt-5 mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
-                      <Trans i18nKey="about.actions.check-projects" />
+                <div className="about-actions hidden md:flex justify-center mt-3">
+                  <a href={process.env.PUBLIC_URL + "/Libre_CV__EN_.pdf"} target="_blank" rel="noreferrer">
+                    <button className="mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
+                      <Trans i18nKey="about.actions.resume-english" />
                     </button>
                   </a>
-                  <a href="#contact">
-                    <button className="mt-5 mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
-                      <Trans i18nKey="about.actions.contact" />
+                  <a href={process.env.PUBLIC_URL + "/Libre_CV__PT_.pdf"} target="_blank" rel="noreferrer">
+                    <button className="mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
+                      <Trans i18nKey="about.actions.resume-portuguese" />
                     </button>
                   </a>
                 </div>
@@ -288,7 +288,7 @@ def analyze():
                 <p><Trans i18nKey="about.paragraph-3" components={{ highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
               </div>
             </div>
-            <div className="mt-7">
+            <div className="mt-4">
               <p className="mr-[10%] ml-[10%] md:mr-0 md:ml-0 text-xl md:text-3xl font-bold text-center mb-4"><Trans i18nKey="about.certifications.title" /></p>
               <Carousel responsive={certificatesCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={8000} swipeable={false}>
                 {certificates.map((certificate, i) => {
