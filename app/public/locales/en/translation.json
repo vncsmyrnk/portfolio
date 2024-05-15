@@ -42,6 +42,7 @@
     },
     "paragraph-1": "APIs and Web APIs are <underline>indispensable</underline> for digital integrations, serving as the linchpin that enables seamless communication and collaboration between disparate systems and services. These APIs provide standardized interfaces that <underline>allow</underline> different software applications to interact, share data, and execute functions across the web.",
     "paragraph-2": "My passion is creating these REST APIs with tools such as Python, Node.js, Java, and PHP. This is the area in which I specialize and continuously develop myself every day. I believe that <highlight>DevOps</highlight>, <highlight>DevSecOps</highlight>, <highlight>CI/CD</highlight> and <highlight>Agile Frameworks</highlight> practices are essential for applications to be developed collaboratively and in an organized manner, significantly reducing potential problems and bugs even before they reach production environments.",
+    "paragraph-3": "As seen on this page, I also have experience in creating web interfaces with JavaScript frameworks. <highlight>Full-stack</highlight> skills are important for developing comprehensive and suitable applications.",
     "certifications": {
       "title": "My certifications and accomplishments"
     }

@@ -284,6 +284,8 @@ def analyze():
                 <p><Trans i18nKey="about.paragraph-1" components={{ underline: <span className="underline" />, strong: <strong /> }} /></p>
                 <br />
                 <p><Trans i18nKey="about.paragraph-2" components={{ highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+                <br />
+                <p><Trans i18nKey="about.paragraph-3" components={{ highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
               </div>
             </div>
             <div className="mt-7">
