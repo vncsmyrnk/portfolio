@@ -1,5 +1,6 @@
 import './App.css';
 import Project from './Project';
+import Certification from './Certification';
 import DarkModeSwitch from './DarkModeSwitch';
 import LanguageSwitch from './LanguageSwitch';
 import { useInView } from 'react-intersection-observer'
@@ -13,7 +14,26 @@ function App() {
   const [refAbout, inViewAbout] = useInView({ threshold: 0.5 })
   const { t } = useTranslation();
 
-  const carouselResponsivity = {
+  const certificatesCarouselResponsivity = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+
+  const projectsCarouselResponsivity = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
       items: 3
@@ -33,6 +53,67 @@ function App() {
   };
 
   const mySkills = ['docker', 'api', 'rest', 'python', 'integrations', 'java', 'backend', 'ai/ml', 'ci/cd', 'git', 'pipelines'];
+
+  const certificates = [
+    {
+      name: 'IBM DevOps and Software Engineering',
+      img: 'ibm-logo.png',
+      imgDark: 'ibm-logo-white.png',
+      url: 'https://www.coursera.org/account/accomplishments/specialization/66L5N4AT8M8M',
+      tags: ['software engineering', 'devops', 'ci/cd']
+    },
+    {
+      name: 'CloudAcademy DevSecOps, DevOps and Software Engineering',
+      img: 'cloudacademy-logo.png',
+      imgDark: 'cloudacademy-logo-dark.png',
+      url: 'https://certificates.cloudacademy.com/aad6d2adc60c57b122cbe716135f4c39815347c8.pdf',
+      tags: ['software engineering', 'devsecops', 'kubernetes', 'docker', 'sonarqube']
+    },
+    {
+      name: 'IBM Application Development using Microservices and Serverless',
+      img: 'ibm-logo.png',
+      imgDark: 'ibm-logo-white.png',
+      url: 'https://www.coursera.org/account/accomplishments/verify/UAB7NFB4VKEJ',
+      tags: ['software engineering', 'microservices', 'docker', 'api']
+    },
+    {
+      name: 'Cloud Academy Building and Deploying a Cloud Native Application',
+      img: 'cloudacademy-logo.png',
+      imgDark: 'cloudacademy-logo-dark.png',
+      url: 'https://certificates.cloudacademy.com/0b1276b17c1933574ccec3a3cf1fefb3021796a2.pdf',
+      tags: ['software engineering', 'microservices', 'devops', 'docker', 'linux']
+    },
+    {
+      name: 'IBM Continuous Integration and Continuous Delivery (CI/CD)',
+      img: 'ibm-logo.png',
+      imgDark: 'ibm-logo-white.png',
+      url: 'https://www.coursera.org/account/accomplishments/verify/SHL6AZNPP6JM',
+      tags: ['software engineering', 'ci/cd', 'docker', 'terraform', 'jenkins', 'GitHub Actions', 'Artifactory']
+    },
+    
+    {
+      name: 'Mathematics for Machine Learning and Data Science',
+      img: 'deeplearningai-logo.png',
+      imgDark: 'deeplearningai-logo.png',
+      url: 'https://www.coursera.org/account/accomplishments/specialization/4UJ8AS7XCHJV',
+      tags: ['machine learning', 'calculus', 'data science', 'statistics', 'probabilities', 'linear algebra']
+    },
+    {
+      name: 'IBM Application Security for Developers and DevOps Professionals',
+      img: 'ibm-logo.png',
+      imgDark: 'ibm-logo-white.png',
+      url: 'https://www.coursera.org/account/accomplishments/verify/S22XF29249EC',
+      tags: ['software engineering', 'owasp', 'grafana', 'monitoring']
+    },
+    {
+      name: 'Cloud Academy Operations with AWS - Level 3',
+      img: 'cloudacademy-logo.png',
+      imgDark: 'cloudacademy-logo-dark.png',
+      url: 'https://certificates.cloudacademy.com/28395c94b90526d5a05d7de61f5dc42509da5a7e.pdf',
+      tags: ['software engineering', 'owasp', 'grafana', 'monitoring']
+    },
+    
+  ];
 
   const projects = [
     {
@@ -123,10 +204,10 @@ def analyze():
                     <a href="#home" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110" aria-current="page"><Trans i18nKey="header.home"/></a>
                   </li>
                   <li>
-                    <a href="#projects" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.projects"/></a>
+                    <a href="#about-me" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.about"/></a>
                   </li>
                   <li>
-                    <a href="#about-me" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.about"/></a>
+                    <a href="#projects" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.projects"/></a>
                   </li>
                   <li>
                     <a href="#contact" className="block py-2 px-3 text-gray-700 dark:text-gray-200 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-900 md:p-0 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.contact"/></a>
@@ -154,39 +235,25 @@ def analyze():
         </div>
         <div className="description-section mt-8 grow justify-center pr-5 md:pr-[20%] ml-5 md:ml-[15%] animate-[slideRight_1s_ease-out]">
           <div className="description-text text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
-            <p><Trans i18nKey="description.text" components={{ span_name: <span className="underline" />, span_language: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+            <p><Trans i18nKey="description.text" components={{ underline: <span className="underline" />, highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
           </div>
-          <a href="#projects">
+          <a href="#about-me">
             <button className="mt-8 bg-blue-500 dark:bg-blue-700 hover:bg-blue-400 dark:hover:bg-blue-600 text-white font-bold py-2 px-4 border-b-4 border-blue-700 dark:border-blue-900 hover:border-blue-500 dark:hover:border-blue-700 rounded transition duration-500 hover:scale-110">
               <Trans i18nKey="description.button" />
             </button>
           </a>
         </div>
       </div>
-      <div className="projects-page md:h-screen flex flex-col justify-center" id="projects">
-        <div ref={refProjects} className={inViewProjects ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
-          <div className="projects-section page-section mr-[5%] ml-[5%]">
-            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="projects.title" /></p>
-            <div className="project-samples mt-[5%] mx-2 mb-2">
-              <Carousel responsive={carouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
-                {projects.map((project, i) => {
-                  return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} chips={project.chips} />
-                })}
-              </Carousel>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="about-page md:h-screen flex flex-col justify-center" id="about-me">
         <div ref={refAbout} className={inViewAbout ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
           <div className="about-section page-section mr-[5%] ml-[5%]">
             <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="about.title" /></p>
-            <div className="about-content mt-[5%] flex flex-col items-center">
-              <div className="p-6 w-full md:w-2/6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
+            <div className="about-content mt-[3%] flex flex-col md:flex-row items-center">
+              <div className="about-card w-full md:w-2/6 p-6 bg-gray-200 dark:bg-slate-950 flex flex-col justify-center items-center border border-gray-200 dark:border-gray-900 rounded-lg shadow">
                 <img src={process.env.PUBLIC_URL + "/me.png"} width="auto" height="200" alt="Vinicius Mayrink" />
-                <h5 className="mb-1 mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
+                <h5 className="mt-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vinicius Mayrink</h5>
                 <p className="text-gray-800 dark:text-gray-500"><Trans i18nKey="about.position" /></p>
-                <div className="mt-4 flex flex-wrap justify-center">
+                <div className="mt-3 flex flex-wrap justify-center">
                   {mySkills.map((skill, i) => {
                     return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-gray-200 dark:text-white uppercase bg-gray-500 dark:bg-gray-900 rounded-md select-none whitespace-nowrap">
                       <span className="">{skill}</span>
@@ -194,9 +261,34 @@ def analyze():
                   })}
                 </div>
               </div>
-              <div className="about-description h-16 mt-[4%] mr-[10%] ml-[10%] text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
-                <p><Trans i18nKey="about.text" components={{ span: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+              <div className="about-description w-5/6 mr-[10%] ml-[10%] md:mr-[2%] md:ml-[2%] text-base md:text-xl text-gray-800 dark:text-gray-400 pt-8 md:pt-0">
+                <p><Trans i18nKey="about.paragraph-1" components={{ underline: <span className="underline" />, strong: <strong /> }} /></p>
+                <br />
+                <p><Trans i18nKey="about.paragraph-2" components={{ highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+                <br />
               </div>
+            </div>
+            <div className="mt-5">
+              <p className="mr-[10%] ml-[10%] md:mr-0 md:ml-0 text-xl md:text-3xl font-bold text-center mb-4"><Trans i18nKey="about.certifications.title" /></p>
+              <Carousel responsive={certificatesCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
+                {certificates.map((certificate, i) => {
+                  return <Certification key={i} name={certificate.name} url={certificate.url} chips={certificate.tags} img={certificate.img} imgDark={certificate.imgDark} />
+                })}
+              </Carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="projects-page md:h-screen flex flex-col justify-center" id="projects">
+        <div ref={refProjects} className={inViewProjects ? "animate-none md:animate-[upDown_1s_ease-out]" : "visible md:invisible"}>
+          <div className="projects-section page-section mr-[5%] ml-[5%]">
+            <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0"><Trans i18nKey="projects.title" /></p>
+            <div className="project-samples mt-[5%] mx-2 mb-2">
+              <Carousel responsive={projectsCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
+                {projects.map((project, i) => {
+                  return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} chips={project.chips} />
+                })}
+              </Carousel>
             </div>
           </div>
         </div>

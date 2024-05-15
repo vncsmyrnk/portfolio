@@ -35,7 +35,7 @@ function LanguageSwitch(props) {
         </button>
       </div>
     
-      <div className={"absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md text-gray-900 dark:text-gray-200 bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none " + (areDropDownOptionsVisible ? "" : "hidden")} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <div className={"absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md text-gray-900 dark:text-gray-200 bg-white dark:bg-gray-800 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none " + (areDropDownOptionsVisible ? "" : "hidden")} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
         <div className="my-1 cursor-pointer" role="none">
           <button onClick={optionClickHandler} className="w-full text-left px-4 py-2 text-sm dark:hover:bg-gray-900" role="menuitem" tabIndex="-1" id="menu-item-1" lang-value="en">
             <span className="fi fi-gb mr-2" />English
