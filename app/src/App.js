@@ -267,7 +267,7 @@ def analyze():
                     </div>
                   })}
                 </div>
-                <div className="about-actions hidden md:flex justify-center mt-3">
+                <div className="about-actions justify-center mt-3">
                   <a href={process.env.PUBLIC_URL + "/Libre_CV__EN_.pdf"} target="_blank" rel="noreferrer">
                     <button className="mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-blue-400 dark:hover:bg-slate-600 text-gray-100 dark:text-gray-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
                       <Trans i18nKey="about.actions.resume-english" />
