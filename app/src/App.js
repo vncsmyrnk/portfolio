@@ -160,7 +160,7 @@ def get_ingredientes():
 [...]`,
       linkUrl: 'https://github.com/Sistema-de-integracao-em-restaurante/api',
       linkDescription: t('projects.button-to-github'),
-      tags: ['rest api', 'python', 'flask', 'sqlalchemy', 'docker']
+      tags: ['rest api', 'python', 'flask', 'sqlalchemy', 'docker', 'ci/cd', 'github actions']
     },
     {
       name: t('projects.work-time-calculator.title'),
@@ -178,7 +178,7 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
 [...]`,
       linkUrl: 'https://github.com/clocked-app/calculations-api',
       linkDescription: t('projects.button-to-github'),
-      tags: ['rest api', 'java', 'spring boot', 'docker']
+      tags: ['rest api', 'java', 'spring boot', 'docker', 'ci/cd', 'github actions']
     },
     {
       name: t('projects.sentiment-analysis.title'),
@@ -197,7 +197,7 @@ def analyze():
 [...]`,
       linkUrl: 'https://github.com/vncsmyrnk/sentiment-analysis-pt',
       linkDescription: t('projects.button-to-github'),
-      tags: ['nlp', 'ai', 'rest api', 'python', 'tensorflow']
+      tags: ['nlp', 'ai', 'rest api', 'python', 'tensorflow', 'ci/cd', 'github actions']
     },
     {
       name: t('projects.digital-donations.title'),
