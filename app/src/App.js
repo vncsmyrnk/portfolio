@@ -53,24 +53,24 @@ function App() {
 
   const certificates = [
     {
-      name: 'CEFET Computer Networks (2016-18)',
-      description: 'Technical Course',
-      img: '',
-      imgDark: '',
+      name: t('certificates.technical.cefet'),
+      description: t('certificates.types.technical'),
+      img: 'cefet-logo.png',
+      imgDark: 'cefet-logo-white.png',
       url: 'https://www.cefetmg.br',
       tags: ['computer networks', 'security', 'programming', 'computer architecture', 'oop', 'algorithms']
     },
     {
-      name: 'PUC-MG Information Systems (2021-24)',
-      description: 'Graduation',
-      img: '',
-      imgDark: '',
+      name: t('certificates.graduation.puc'),
+      description: t('certificates.types.graduation'),
+      img: 'pucmg-logo.png',
+      imgDark: 'pucmg-logo-white.png',
       url: 'https://www.pucminas.br/destaques/Paginas/default.aspx',
       tags: ['system analysis', 'software engineering', 'software projects', 'algorithms', 'buisiness inteligence', 'data science']
     },
     {
       name: 'IBM DevOps and Software Engineering',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/specialization/66L5N4AT8M8M',
@@ -78,7 +78,7 @@ function App() {
     },
     {
       name: 'CloudAcademy DevSecOps, DevOps and Software Engineering',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'cloudacademy-logo.png',
       imgDark: 'cloudacademy-logo-dark.png',
       url: 'https://certificates.cloudacademy.com/aad6d2adc60c57b122cbe716135f4c39815347c8.pdf',
@@ -86,7 +86,7 @@ function App() {
     },
     {
       name: 'IBM Application Development using Microservices and Serverless',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/verify/UAB7NFB4VKEJ',
@@ -94,7 +94,7 @@ function App() {
     },
     {
       name: 'Cloud Academy Building and Deploying a Cloud Native Application',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'cloudacademy-logo.png',
       imgDark: 'cloudacademy-logo-dark.png',
       url: 'https://certificates.cloudacademy.com/0b1276b17c1933574ccec3a3cf1fefb3021796a2.pdf',
@@ -102,7 +102,7 @@ function App() {
     },
     {
       name: 'IBM Continuous Integration and Continuous Delivery (CI/CD)',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/verify/SHL6AZNPP6JM',
@@ -111,7 +111,7 @@ function App() {
     
     {
       name: 'Mathematics for Machine Learning and Data Science',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'deeplearningai-logo.png',
       imgDark: 'deeplearningai-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/specialization/4UJ8AS7XCHJV',
@@ -119,7 +119,7 @@ function App() {
     },
     {
       name: 'IBM Application Security for Developers and DevOps Professionals',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/verify/S22XF29249EC',
@@ -127,7 +127,7 @@ function App() {
     },
     {
       name: 'Cloud Academy Operations with AWS - Level 3',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'cloudacademy-logo.png',
       imgDark: 'cloudacademy-logo-dark.png',
       url: 'https://certificates.cloudacademy.com/28395c94b90526d5a05d7de61f5dc42509da5a7e.pdf',
@@ -135,7 +135,7 @@ function App() {
     },
     {
       name: 'IBM Monitoring and Observability for Development and DevOps',
-      description: 'Course',
+      description: t('certificates.types.course'),
       img: 'ibm-logo.png',
       imgDark: 'ibm-logo-white.png',
       url: 'https://www.coursera.org/account/accomplishments/verify/SVKX7AQPSXE2',
@@ -160,7 +160,7 @@ def get_ingredientes():
 [...]`,
       linkUrl: 'https://github.com/Sistema-de-integracao-em-restaurante/api',
       linkDescription: t('projects.button-to-github'),
-      chips: ['rest api', 'python', 'flask', 'sqlalchemy', 'docker']
+      tags: ['rest api', 'python', 'flask', 'sqlalchemy', 'docker']
     },
     {
       name: t('projects.work-time-calculator.title'),
@@ -178,7 +178,7 @@ public ResponseEntity<List<Calculation>> calculateDay(@Valid @RequestBody Reques
 [...]`,
       linkUrl: 'https://github.com/clocked-app/calculations-api',
       linkDescription: t('projects.button-to-github'),
-      chips: ['rest api', 'java', 'spring boot', 'docker']
+      tags: ['rest api', 'java', 'spring boot', 'docker']
     },
     {
       name: t('projects.sentiment-analysis.title'),
@@ -197,7 +197,7 @@ def analyze():
 [...]`,
       linkUrl: 'https://github.com/vncsmyrnk/sentiment-analysis-pt',
       linkDescription: t('projects.button-to-github'),
-      chips: ['nlp', 'ai', 'rest api', 'python', 'tensorflow']
+      tags: ['nlp', 'ai', 'rest api', 'python', 'tensorflow']
     },
     {
       name: t('projects.digital-donations.title'),
@@ -216,7 +216,7 @@ def analyze():
 [...]`,
       linkUrl: 'https://github.com/doardigital/api',
       linkDescription: t('projects.button-to-github'),
-      chips: ['rest api', 'node.js', 'koa.js', 'docker']
+      tags: ['rest api', 'node.js', 'koa.js', 'docker']
     },
   ];
 
@@ -320,7 +320,7 @@ def analyze():
             <p className="mr-[10%] ml-[10%] md:mr-0 md:ml-0 text-xl md:text-3xl font-bold text-center mb-4"><Trans i18nKey="about.certifications.title" /></p>
             <Carousel responsive={certificatesCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={6500} swipeable={false}>
               {certificates.map((certificate, i) => {
-                return <Certification key={i} name={certificate.name} description={certificate.description} url={certificate.url} chips={certificate.tags} img={certificate.img} imgDark={certificate.imgDark} />
+                return <Certification key={i} name={certificate.name} description={certificate.description} url={certificate.url} tags={certificate.tags} img={certificate.img} imgDark={certificate.imgDark} />
               })}
             </Carousel>
           </div>
@@ -339,7 +339,7 @@ def analyze():
           <div className="project-samples mt-[2%] mx-2 mb-2">
             <Carousel responsive={projectsCarouselResponsivity} infinite={true} autoPlay={true} autoPlaySpeed={5000} swipeable={false}>
               {projects.map((project, i) => {
-                return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} chips={project.chips} />
+                return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} tags={project.tags} />
               })}
             </Carousel>
           </div>
