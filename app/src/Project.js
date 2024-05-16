@@ -3,13 +3,13 @@ import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Project(props) {
   return (
-    <div className="p-6 mx-2 bg-gray-200 dark:bg-slate-950 border border-gray-200 dark:border-gray-900 rounded-lg shadow">
-      <h5 className="mb-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.name}</h5>
-      <p className="text-gray-700 dark:text-gray-400">{props.description}</p>
-      <div className="chips mt-4">
-        {props.chips && props.chips.map((chip, i) => {
-          return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-gray-200 dark:text-white uppercase bg-gray-500 dark:bg-gray-900 rounded-md select-none whitespace-nowrap">
-            <span>{chip}</span>
+    <div className="p-6 mx-2 bg-slate-200 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 rounded-lg shadow">
+      <h5 className="mb-3 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">{props.name}</h5>
+      <p className="text-slate-700 dark:text-slate-400">{props.description}</p>
+      <div className="tags mt-4">
+        {props.tags && props.tags.map((tag, i) => {
+          return <div key={i} className="inline-block relative px-2 py-1 mr-2 mb-2 font-sans text-xs font-bold text-slate-200 dark:text-white uppercase bg-slate-500 dark:bg-slate-900 rounded-md select-none whitespace-nowrap">
+            <span>{tag}</span>
           </div>
         })}
       </div>

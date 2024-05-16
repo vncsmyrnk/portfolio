@@ -3,7 +3,8 @@
     "home": "Início",
     "projects": "Projetos",
     "about": "Sobre mim",
-    "contact": "Contato"
+    "contact": "Contato",
+    "toggle-dark-light-mode-tooltip": "Alterar modo escuro/claro"
   },
   "main_sentence": {
     "title": "Impulsionando o mundo digital através dos bastidores",
@@ -12,6 +13,19 @@
   "description": {
     "text": "Eu sou <underline>Vinicius Mayrink</underline> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <highlight>Python</highlight>, <highlight>Java</highlight> e <highlight>Node.js</highlight>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escaláveis</strong> e <strong>eficientes</strong>",
     "button": "Veja mais"
+  },
+  "certificates": {
+    "types": {
+      "course": "Curso",
+      "graduation": "Graduação",
+      "technical": "Técnico"
+    },
+    "technical": {
+      "cefet": "CEFET Redes de Computadores (2016-18)"
+    },
+    "graduation": {
+      "puc": "PUC-MG Sistemas de Informação (2021-24)"
+    }
   },
   "projects": {
     "title": "Projetos",
@@ -48,7 +62,7 @@
     }
   },
   "contact": {
-    "title": "Entre em contato"
+    "title": "Entre em contato por"
   },
   "footer": {
     "website-tools": "Este site foi produzido com"
