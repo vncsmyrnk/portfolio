@@ -2,6 +2,7 @@
   "header": {
     "home": "Home",
     "projects": "Projects",
+    "methodology": "Methodology",
     "about": "About me",
     "contact": "Contact",
     "toggle-dark-light-mode-tooltip": "Toogle dark/light mode"
@@ -46,6 +47,11 @@
       "title": "Digital Donations API",
       "description": "REST API responsible for managing donation information. This API was built with NodeJS and Koa.js. The application expects a PostgreSQL database. Docker was used to run the app services"
     }
+  },
+  "methodology": {
+    "title": "Methodology",
+    "paragraph-1": "In my projects, I use <highlight>DevOps</highlight> principles. DevOps leads to <underline>faster</underline> and more <underline>frequent</underline> releases, enhancing the ability to respond to market changes and customer needs promptly. Continuous integration and continuous delivery (CI/CD) pipelines streamline the deployment process, reducing time to market.",
+    "paragraph-2": "<underline>Continuous integration (CI)</underline> and testing are automated with Jenkins, GitHub Actions. <underline>Continuous delivery (CD)</underline> uses Jenkins and Docker, with Docker Hub for managing images. <underline>Deployment</underline> is done on AWS EC2 and Google Cloud Run. These integrated stages and technologies enable efficient, continuous delivery of <highlight>high-quality software</highlight>, boosting productivity and user satisfaction."
   },
   "about": {
     "title": "About me",
