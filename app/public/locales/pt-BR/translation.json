@@ -2,6 +2,7 @@
   "header": {
     "home": "Início",
     "projects": "Projetos",
+    "methodology": "Metodologia",
     "about": "Sobre mim",
     "contact": "Contato",
     "toggle-dark-light-mode-tooltip": "Alterar modo escuro/claro"
@@ -46,6 +47,11 @@
       "title": "Doar Digital API",
       "description": "API REST responsável por gerenciar informações de doação. Esta API foi construída com NodeJS e Koa.js. A aplicação espera um banco de dados PostgreSQL. Docker foi utilizado para executar os serviços da aplicação"
     }
+  },
+  "methodology": {
+    "title": "Metodologia",
+    "paragraph-1": "Nos meus projetos, eu uso os princípios de <highlight>DevOps</highlight>. DevOps leva a entregas <underline>mais rápidas</underline> e mais <underline>frequentes</underline>, melhorando a capacidade de responder prontamente às mudanças do mercado e às necessidades dos clientes. As pipelines de integração contínua e entrega contínua (CI/CD) simplificam o processo de implantação, reduzindo o tempo de lançamento no mercado.",
+    "paragraph-2": "A <underline>integração contínua (CI)</underline> e os testes são automatizados com Jenkins e GitHub Actions. A <underline>entrega contínua (CD)</underline> usa Jenkins e Docker, com Docker Hub para gerenciamento de imagens. A <underline>implantação</underline> é feita no AWS EC2 e Google Cloud Run. Esses estágios integrados e tecnologias permitem uma entrega contínua e eficiente de <highlight>software de alta qualidade</highlight>, aumentando a produtividade e a satisfação do usuário."
   },
   "about": {
     "title": "Sobre mim",

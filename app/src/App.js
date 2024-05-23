@@ -227,7 +227,7 @@ def analyze():
           <nav>
             <div className="flex flex-wrap items-center justify-between mx-auto pt-4">
               <span className="self-center text-4xl font-semibold whitespace-nowrap">~</span>
-              <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+              <div className="hidden w-full lg:block md:w-auto" id="navbar-default">
                 <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-slate-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                   <li>
                     <a href="#home" className="block py-2 px-3 text-slate-700 dark:text-slate-200 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-900 md:p-0 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110" aria-current="page"><Trans i18nKey="header.home"/></a>
@@ -237,6 +237,9 @@ def analyze():
                   </li>
                   <li>
                     <a href="#projects" className="block py-2 px-3 text-slate-700 dark:text-slate-200 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-900 md:p-0 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.projects"/></a>
+                  </li>
+                  <li>
+                    <a href="#methodology" className="block py-2 px-3 text-slate-700 dark:text-slate-200 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-900 md:p-0 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.methodology"/></a>
                   </li>
                   <li>
                     <a href="#contact" className="block py-2 px-3 text-slate-700 dark:text-slate-200 rounded hover:bg-slate-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-900 md:p-0 md:dark:hover:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent transition duration-500 hover:scale-110"><Trans i18nKey="header.contact"/></a>
@@ -249,7 +252,7 @@ def analyze():
                   </li>
                 </ul>
               </div>
-              <div className="sm:hidden flex">
+              <div className="lg:hidden flex">
                 <DarkModeSwitch className="mx-3" />
                 <LanguageSwitch />
               </div>
@@ -342,6 +345,31 @@ def analyze():
                 return <Project key={i} className="project-sample project-python w-full" name={project.name} description={project.description} language={project.language} codeString={project.codeString} linkUrl={project.linkUrl} linkDescription={project.linkDescription} tags={project.tags} />
               })}
             </Carousel>
+          </div>
+        </div>
+      </div>
+      <div className="methodology-page md:h-screen flex flex-col justify-center" id="methodology">
+        <div className="methodology-section page-section mr-[5%] ml-[5%]">
+          <p className="text-3xl md:text-5xl font-bold mr-[10%] ml-[10%] mt-[70px] md:mt-0">
+            <a href="#methodology" className="title group">
+              <span className="title-text dark:text-white dark:group-hover:text-white md:group-hover:text-slate-600 dark:md:group-hover:text-slate-400">
+                <Trans i18nKey="methodology.title" />
+              </span>
+              <span className="hashtag text-transparent group-hover:text-transparent md:group-hover:text-slate-300 dark:md:group-hover:text-slate-700"> #</span>
+            </a>
+          </p>
+          <div className="methodology-samples mt-[2%] mx-2 mb-2 flex flex-col items-center">
+            <div className="methodology-card p-8 mx-2 bg-slate-200 dark:bg-slate-950 border border-slate-200 dark:border-slate-900 rounded-lg shadow w-full overflow-auto">
+              <div className="methodology-image min-w-[800px] flex flex-col items-center">
+                <img className="hidden dark:block" src={process.env.PUBLIC_URL + "/code-methodology.png"} alt="My Work Methodology" />
+                <img className="block dark:hidden" src={process.env.PUBLIC_URL + "/code-methodology-white.png"} alt="My Work Methodology" />
+              </div>
+            </div>
+            <div className="methodoloy-description mt-6 text-base md:text-xl text-slate-800 dark:text-slate-400">
+              <p><Trans i18nKey="methodology.paragraph-1" components={{ underline: <span className="underline" />, highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+              <br />
+              <p><Trans i18nKey="methodology.paragraph-2" components={{ underline: <span className="underline" />, highlight: <span className="text-blue-700 dark:text-blue-400 font-semibold" />, strong: <strong /> }} /></p>
+            </div>
           </div>
         </div>
       </div>
