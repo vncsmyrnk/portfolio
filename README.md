@@ -12,12 +12,12 @@ All my skills and accomplishments showcased in one place.
 
 [Check it out!](https://vncsmyrnk.github.io/portfolio/)
 
-## Run locally
+## Run with docker
 
 ```bash
 git clone git@github.com:vncsmyrnk/portfolio.git
 cd portifolio
-docker run --rm -it -v "$(pwd)"/app:/var/app -p 3000:3000 --workdir /var/app node:21-alpine sh
+docker run --rm -it -v "$(pwd)"/app:/var/app -p 3000:3000 --workdir /var/app node:21-slim bash
 ```
 
 ```bash
