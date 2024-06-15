@@ -22,7 +22,7 @@ jobs:
           version: 9
 
       - name: Install dependencies
-        run: pnpm install --prod
+        run: pnpm install
 
       - name: Lint
         run: pnpm run lint
