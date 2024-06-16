@@ -1,16 +1,11 @@
 import {
+  Certification,
   DarkModeSwitch,
   LanguageSwitch,
-  Certification,
   Project,
 } from "@/components";
-import {
-  FaLinkedin,
-  FaEnvelope,
-  FaPhone,
-  FaGithub,
-  FaReact,
-} from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { SiVite } from "react-icons/si";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -693,8 +688,12 @@ def analyze():
             >
               <FaGithub className="mx-2 md:mx-5" color="#334155" size="4rem" />
             </a>
-            <a href="tel:+5531984805330">
-              <FaPhone className="mx-2 md:mx-5" color="#334155" size="4rem" />
+            <a href="https://wa.me/5531984805330" target="_blank">
+              <IoLogoWhatsapp
+                className="mx-2 md:mx-5"
+                color="#334155"
+                size="4rem"
+              />
             </a>
           </div>
         </div>
