@@ -471,12 +471,12 @@ def analyze():
                 })}
               </div>
               <div className="about-actions justify-center mt-3">
-                <a href="Libre_CV__EN_.pdf" target="_blank" rel="noreferrer">
+                <a href="CV_ViniciusMayrink_en.pdf" target="_blank" rel="noreferrer">
                   <button className="mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-slate-400 dark:hover:bg-slate-600 text-slate-100 dark:text-slate-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
                     <Trans i18nKey="about.actions.resume-english" />
                   </button>
                 </a>
-                <a href="Libre_CV__PT_.pdf" target="_blank" rel="noreferrer">
+                <a href="CV_ViniciusMayrink_ptbr.pdf" target="_blank" rel="noreferrer">
                   <button className="mr-4 ring ring-slate-400 dark:ring-slate-700 bg-slate-600 dark:bg-slate-800 hover:bg-slate-400 dark:hover:bg-slate-600 text-slate-100 dark:text-slate-300 font-bold py-1 px-3 rounded transition duration-500 hover:scale-110">
                     <Trans i18nKey="about.actions.resume-portuguese" />
                   </button>
