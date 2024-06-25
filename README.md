@@ -23,9 +23,8 @@ docker run --rm -it -v "$(pwd)"/app:/var/app -p 3000:3000 --workdir /var/app nod
 
 ```bash
 # Inside container
-apt update && apt install -y curl
-export SHELL=/bin/bash
-curl -fsSL https://get.pnpm.io/install.sh | sh - # Install pnpm
+apt update && apt install -y wget
+wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
 source ~/.bashrc
 pnpm install
 pnpm run dev

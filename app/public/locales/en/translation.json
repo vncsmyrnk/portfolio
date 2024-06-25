@@ -35,6 +35,10 @@
       "title": "Restaurant Integration API",
       "description": "This API aims to centralize information related to restaurant orders in just one place, providing webhooks so that other systems can make decisions based on order activity"
     },
+    "todayiwill": {
+      "title": "todayiwill",
+      "description": "A CLI reminder app build with rust and clap that offers a simple yet powerful solution to enhance productivity and ensure that you stay on top of your daily responsibilities."
+    },
     "work-time-calculator": {
       "title": "Work Time Calculator API",
       "description": "This is an app built with Spring Boot and Gradle to calculate work time for a given parameter inputs"
