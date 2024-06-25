@@ -37,7 +37,7 @@
     },
     "todayiwill": {
       "title": "todayiwill",
-      "description": "A CLI reminder app build with rust and clap that offers a simple yet powerful solution to enhance productivity and ensure that you stay on top of your daily responsibilities."
+      "description": "A CLI reminder app build with rust and clap that offers a simple yet powerful solution to enhance productivity and ensure that you stay on top of your daily responsibilities"
     },
     "work-time-calculator": {
       "title": "Work Time Calculator API",

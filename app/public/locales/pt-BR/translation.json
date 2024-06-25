@@ -37,7 +37,7 @@
     },
     "todayiwill": {
       "title": "todayiwill",
-      "description": "Um aplicativo de linha de comando (CLI) construído com Rust e clap que oferece uma solução simples, mas poderosa, para aumentar a produtividade e garantir que você esteja no controle de suas responsabilidades diárias."
+      "description": "Um aplicativo de linha de comando (CLI) construído com Rust e clap que oferece uma solução simples, mas poderosa, para aumentar a produtividade e garantir que você esteja no controle de suas responsabilidades diárias"
     },
     "work-time-calculator": {
       "title": "Calculador de Tempo Trabalhado API",
