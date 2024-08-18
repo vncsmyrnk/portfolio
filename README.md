@@ -15,6 +15,8 @@ All my skills and accomplishments showcased in one place.
 
 ## Contributing
 
+This project uses [just](https://github.com/casey/just) running development tasks.
+
 ```bash
 just build-dev-env # Run it just once
 just run-dev-env # Run the docker container
