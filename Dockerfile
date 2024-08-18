@@ -1,4 +1,6 @@
-# Stage 1: Base image
-FROM node:21-alpine AS base
-WORKDIR /var/app/
-COPY app/ .
+FROM homebrew/ubuntu22.04
+SHELL ["/bin/bash", "-c"]
+RUN <<EOF
+brew install pnpm just node
+EOF
+LABEL description=""
