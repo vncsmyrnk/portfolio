@@ -1,5 +1,9 @@
 name: CI workflow
 
+on:
+  push:
+    branches: [ "*" ]
+
 jobs:
   ci:
     runs-on: ubuntu-latest
