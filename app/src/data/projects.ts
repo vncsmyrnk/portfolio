@@ -105,15 +105,14 @@ return distilled_student_sentiment_classifier(sentence_to_analyze)
     description: "projects.digital-donations.description",
     language: "javascript",
     codeString: `[...]
-@app.post("/analyze")
-def analyze():
-  distilled_student_sentiment_classifier = pipeline(
-    model="lxyuan/distilbert-base-multilingual-cased-sentiments-student",
-      return_all_scores=True
-)
-print(request.data, request.json)
-sentence_to_analyze = request.json['sentence']
-return distilled_student_sentiment_classifier(sentence_to_analyze)
+const getById = async (ctx, next) => {
+  const images = await models[modelName].findAll({
+    where: {
+      idEquipamento: ctx.params.id
+    }
+  })
+  return images;
+};
 [...]`,
     linkUrl: "https://github.com/doardigital/api",
     linkDescription: "projects.button-to-github",
