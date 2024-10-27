@@ -103,6 +103,6 @@ jobs:
 
       - name: Deploy
         env:
-          KOYEB_TOKEN: ${{ secrets.KOYEB_TOKEN }}
-          KOYEB_SERVICEID: ${{ secrets.KOYEB_SERVICEID }}
-        run: just deploy-to-koyeb
+          TOKEN: ${{ secrets.KOYEB_TOKEN }}
+          SERVICEID: ${{ secrets.KOYEB_SERVICEID }}
+        run: KOYEB_TOKEN=$TOKEN KOYEB_SERVICEID=$SERVICEID just deploy-to-koyeb
