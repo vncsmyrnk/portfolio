@@ -92,13 +92,12 @@ jobs:
             ghcr.io/vncsmyrnk/portfolio:latest
 
   deploy-to-koyeb:
-    # if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: koyeb
       url: ${{ vars.URL }}
-    # needs: build-docker-image
-    needs: ci
+    needs: build-docker-image
     steps:
       - name: Checkout
         uses: actions/checkout@v4
