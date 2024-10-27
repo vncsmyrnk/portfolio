@@ -25,3 +25,6 @@ dev-run: install lint
 
 build: install lint
   cd "{{source_directory()}}/app" && pnpm run build
+
+deploy-to-koyeb:
+  ./deploy-to-koyeb.sh
