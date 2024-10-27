@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEPLOY_CHECK_TIMEOUT_SECONDS=100
+DEPLOY_CHECK_TIMEOUT_SECONDS=180
 KOYEB_BASE_URL=https://app.koyeb.com/v1
 
 if [ -z $KOYEB_TOKEN ] || [ -z $KOYEB_SERVICEID ]; then
