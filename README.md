@@ -12,16 +12,13 @@ All my skills and accomplishments showcased in one place.
 
 [Check it out!](https://vncsmyrnk.github.io/portfolio/)
 
+## Hosted options
+
+[Check it out on Koyeb!](https://portfolio-vncsmyrnk.koyeb.app/)
+
 ## Contributing
 
 This project uses [just](https://github.com/casey/just) running development tasks.
-
-```bash
-just build-dev-env # Run it just once
-just run-dev-env # Run the docker container
-```
-
-Then, inside the container:
 
 ```bash
 just dev-run # Runs on localhost:3000

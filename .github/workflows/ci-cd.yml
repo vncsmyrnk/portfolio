@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  packages: write
+
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -35,7 +38,7 @@ jobs:
             ./app/dist
             !./app/dist/**/*.md
 
-  deploy:
+  deploy-to-gh-pages:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     needs: ci
@@ -65,3 +68,41 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  build-docker-image:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: |
+            ghcr.io/vncsmyrnk/portfolio:latest
+
+  deploy-to-koyeb:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs: build-docker-image
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: extractions/setup-just@v1
+
+      - name: Deploy
+        env:
+          TOKEN: ${{ secrets.KOYEB_TOKEN }}
+          SERVICEID: ${{ secrets.KOYEB_SERVICEID }}
+        run: KOYEB_TOKEN=$TOKEN KOYEB_SERVICEID=$SERVICEID just deploy-to-koyeb
