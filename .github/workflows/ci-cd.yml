@@ -94,6 +94,9 @@ jobs:
   deploy-to-koyeb:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    environment:
+      name: koyeb
+      url: ${{ vars.URL }}
     needs: build-docker-image
     steps:
       - name: Checkout
