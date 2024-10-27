@@ -2,7 +2,7 @@ name: CI/CD workflow
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "fix/deploy-koyeb-script-finish-check" ]
   pull_request:
     branches: [ "main" ]
 
@@ -92,8 +92,11 @@ jobs:
             ghcr.io/vncsmyrnk/portfolio:latest
 
   deploy-to-koyeb:
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    environment:
+      name: koyeb
+      url: ${{ vars.URL }}
     needs: build-docker-image
     steps:
       - name: Checkout
