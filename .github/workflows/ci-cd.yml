@@ -2,7 +2,7 @@ name: CI/CD workflow
 
 on:
   push:
-    branches: [ "fix/deploy-koyeb-script-finish-check" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -97,7 +97,8 @@ jobs:
     environment:
       name: koyeb
       url: ${{ vars.URL }}
-    needs: build-docker-image
+    # needs: build-docker-image
+    needs: ci
     steps:
       - name: Checkout
         uses: actions/checkout@v4
