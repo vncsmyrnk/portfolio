@@ -103,6 +103,7 @@ jobs:
       - uses: extractions/setup-just@v1
 
       - name: Deploy
+        shell: bash
         env:
           TOKEN: ${{ secrets.KOYEB_TOKEN }}
           SERVICEID: ${{ secrets.KOYEB_SERVICEID }}
