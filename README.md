@@ -18,7 +18,6 @@ This project uses [just](https://github.com/casey/just) running development task
 
 ```bash
 just build-dev-env run-dev-env # Builds and runs the dev container
-docker exec -it portfolio-dev bash # Gets inside the container
 just dev-run # Runs the app (must be run inside the container)
 ```
 
