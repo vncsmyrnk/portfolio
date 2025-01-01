@@ -31,6 +31,10 @@
   "projects": {
     "title": "Projects",
     "button-to-github": "See on GitHub",
+    "fakeapi": {
+      "title": "Fake API",
+      "description": "Fake API allows you to quickly set up and run a RESTful API server with customizable endpoints and responses. This makes it an ideal tool for software testing without relying on external services"
+    },
     "restaurant": {
       "title": "Restaurant Integration API",
       "description": "This API aims to centralize information related to restaurant orders in just one place, providing webhooks so that other systems can make decisions based on order activity"
