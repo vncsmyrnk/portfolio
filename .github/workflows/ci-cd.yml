@@ -92,7 +92,8 @@ jobs:
             ghcr.io/vncsmyrnk/portfolio:latest
 
   deploy-to-koyeb:
-    if: github.ref == 'refs/heads/main'
+    # if: github.ref == 'refs/heads/main'
+    if: false
     runs-on: ubuntu-latest
     environment:
       name: koyeb
