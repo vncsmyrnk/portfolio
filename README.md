@@ -17,5 +17,9 @@ All my skills and accomplishments showcased in one place.
 This project uses [just](https://github.com/casey/just) running development tasks.
 
 ```bash
-just dev-run # Runs on localhost:3000
+just build-dev-env run-dev-env # Builds and runs the dev container
+docker exec -it portfolio-dev bash # Gets inside the container
+just dev-run # Inside the docker container
 ```
+
+The local environment should be available at http://localhost:3000.
