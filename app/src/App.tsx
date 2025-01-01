@@ -59,7 +59,7 @@ function App() {
     "rest",
     "python",
     "integrations",
-    "java",
+    "go",
     "backend",
     "ai/ml",
     "ci/cd",
