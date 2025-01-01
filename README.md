@@ -12,10 +12,6 @@ All my skills and accomplishments showcased in one place.
 
 [Check it out!](https://vncsmyrnk.github.io/portfolio/)
 
-## Hosted options
-
-[Check it out on Koyeb!](https://portfolio-vncsmyrnk.koyeb.app/)
-
 ## Contributing
 
 This project uses [just](https://github.com/casey/just) running development tasks.
