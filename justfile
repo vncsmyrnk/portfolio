@@ -4,7 +4,7 @@ default:
 path := "{{source_directory()}}/app"
 
 build-dev-env:
-  docker build -t portfolio-dev .
+  docker build -t portfolio-dev .dev
 
 run-dev-env:
   docker run --rm -it \
