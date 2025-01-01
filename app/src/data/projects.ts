@@ -1,5 +1,32 @@
 export const projects = [
   {
+    name: "projects.fakeapi.title",
+    description: "projects.fakeapi.description",
+    language: "go",
+    codeString: `[...]
+delayDuration := stdtime.Duration(activeEndpoint.OutputDelaySeconds) * stdtime.Second
+s.TimeProvider.Sleep(delayDuration)
+
+w.Header().Set("Content-Type", "application/json")
+w.WriteHeader(activeEndpoint.OutputStatus)
+
+if activeEndpoint.OutputContent == nil {
+    return
+}
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/fakeapi",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "cli",
+      "mock",
+      "go",
+      "tests",
+      "codecov",
+      "ci/cd",
+      "rest api",
+    ],
+  },
+  {
     name: "projects.restaurant.title",
     description: "projects.restaurant.description",
     language: "python",
