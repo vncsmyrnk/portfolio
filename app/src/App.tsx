@@ -623,7 +623,7 @@ function App() {
             </a>
           </div>
           <p className="text-slate-500 dark:text-slate-800 mt-3 text-sm">
-            &copy; 2024 Vinicius Mayrink
+            &copy; {new Date().getFullYear()} Vinicius Mayrink
           </p>
         </div>
       </div>
