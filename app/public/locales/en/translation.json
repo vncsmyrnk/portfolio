@@ -35,6 +35,10 @@
       "title": "Fake API",
       "description": "Fake API allows you to quickly set up and run a RESTful API server with customizable endpoints and responses. This makes it an ideal tool for software testing without relying on external services"
     },
+    "dotfiles": {
+      "title": "My dotfiles",
+      "description": "Dotfiles are configuration files used by various programs to customize their behavior. This is the repository where I store the configurations for the tools I use on a daily basis."
+    },
     "restaurant": {
       "title": "Restaurant Integration API",
       "description": "This API aims to centralize information related to restaurant orders in just one place, providing webhooks so that other systems can make decisions based on order activity"
