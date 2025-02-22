@@ -27,6 +27,30 @@ if activeEndpoint.OutputContent == nil {
     ],
   },
   {
+    name: "projects.dotfiles.title",
+    description: "projects.dotfiles.description",
+    language: "bash",
+    codeString: `[...]
+ZSH_THEME="bira"
+plugins=(git z fzf zsh-syntax-highlighting zsh-autosuggestions)
+[ -d "$HOME/.config/util/completions" ] && fpath=($HOME/.config/util/completions $fpath)
+[ -f "$HOME/.config/util/setup" ] && \. "$HOME/.config/util/setup"
+
+# User configuration
+export EDITOR='nvim'
+export LANG=en_US.UTF-8
+export UTILS_RC_PATH="$HOME/.utils/rc"
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/dotfiles",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "shell",
+      "zsh",
+      "dotfiles",
+      "linux",
+    ],
+  },
+  {
     name: "projects.restaurant.title",
     description: "projects.restaurant.description",
     language: "python",
