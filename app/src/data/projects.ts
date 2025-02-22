@@ -34,7 +34,7 @@ if activeEndpoint.OutputContent == nil {
 ZSH_THEME="bira"
 plugins=(git z fzf zsh-syntax-highlighting zsh-autosuggestions)
 [ -d "$HOME/.config/util/completions" ] && fpath=($HOME/.config/util/completions $fpath)
-[ -f "$HOME/.config/util/setup" ] && \. "$HOME/.config/util/setup"
+[ -f "$HOME/.config/util/setup" ] && \\. "$HOME/.config/util/setup"
 
 # User configuration
 export EDITOR='nvim'
