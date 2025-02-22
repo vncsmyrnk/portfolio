@@ -37,7 +37,7 @@
     },
     "dotfiles": {
       "title": "Meus dotfiles",
-      "description": "Dotfiles são arquivos de configuração usados por vários programas que permitem customizar seu comportamento. Esse é o repositório onde guardo as configurações das ferramentas que uso no dia=a-dia."
+      "description": "Dotfiles são arquivos de configuração usados por vários programas que permitem customizar seu comportamento. Esse é o repositório onde guardo as configurações das ferramentas que uso no dia-a-dia"
     },
     "aoc": {
       "title": "Advent Of Code",
