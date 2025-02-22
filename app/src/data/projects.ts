@@ -55,14 +55,15 @@ export UTILS_RC_PATH="$HOME/.utils/rc"
     description: "projects.aoc.description",
     language: "zig",
     codeString: `[...]
-fn counterWrapper(counter: *usize, mutex: *std.Thread.Mutex, matcher: Matcher, search_criteria: SearchContext) void {
-    const match = matcher(search_criteria);
-    if (match) {
-        mutex.lock();
-        defer mutex.unlock();
-        counter.* += 1;
-    }
-}
+const matchers: []const Matcher = &.{
+    lastCharsMatchHorizontally,
+    lastCharsMatchVertically,
+};
+const search = SearchContext{
+    .search_word = search_word,
+    .starting_row_index = row_index,
+    .starting_column_index = column_index,
+};
 [...]`,
     linkUrl: "https://github.com/vncsmyrnk/aoc",
     linkDescription: "projects.button-to-github",
