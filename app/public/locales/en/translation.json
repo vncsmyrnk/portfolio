@@ -37,7 +37,11 @@
     },
     "dotfiles": {
       "title": "My dotfiles",
-      "description": "Dotfiles are configuration files used by various programs to customize their behavior. This is the repository where I store the configurations for the tools I use on a daily basis."
+      "description": "Dotfiles are configuration files used by various programs to customize their behavior. This is the repository where I store the configurations for the tools I use on a daily basis"
+    },
+    "aoc": {
+      "title": "Advent Of Code",
+      "description": "Advent of Code is an Advent calendar featuring small programming puzzles designed for various skill levels, which can be solved using any programming language of your choice. This repository contains my solutions to these challenges"
     },
     "restaurant": {
       "title": "Restaurant Integration API",

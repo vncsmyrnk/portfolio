@@ -37,7 +37,11 @@
     },
     "dotfiles": {
       "title": "Meus dotfiles",
-      "description": "Dotfiles são arquivos de configuração usados por vários programas que permitem customizar seu comportamento. Esse é o repositório onde guardo as configurações das ferramentas que uso no dia=a-dia."
+      "description": "Dotfiles são arquivos de configuração usados por vários programas que permitem customizar seu comportamento. Esse é o repositório onde guardo as configurações das ferramentas que uso no dia-a-dia"
+    },
+    "aoc": {
+      "title": "Advent Of Code",
+      "description": "Advent of Code apresenta pequenos desafios de programação projetados para diversos níveis de habilidade, que podem ser resolvidos usando qualquer linguagem de programação. Este repositório contém as minhas soluções para esses desafios"
     },
     "restaurant": {
       "title": "Integração em restaurantes API",
