@@ -51,6 +51,30 @@ export UTILS_RC_PATH="$HOME/.utils/rc"
     ],
   },
   {
+    name: "projects.aoc.title",
+    description: "projects.aoc.description",
+    language: "zig",
+    codeString: `[...]
+fn counterWrapper(counter: *usize, mutex: *std.Thread.Mutex, matcher: Matcher, search_criteria: SearchContext) void {
+    const match = matcher(search_criteria);
+    if (match) {
+        mutex.lock();
+        defer mutex.unlock();
+        counter.* += 1;
+    }
+}
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/aoc",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "zig",
+      "perl",
+      "competitive-programming",
+      "shell",
+      "awk",
+    ],
+  },
+  {
     name: "projects.restaurant.title",
     description: "projects.restaurant.description",
     language: "python",
