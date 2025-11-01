@@ -35,6 +35,14 @@
       "title": "Fake API",
       "description": "Fake API permite configurar e executar rapidamente um servidor RESTful com endpoints e respostas personalizáveis. Isso a torna uma ferramenta ideal para testes de software sem depender de serviços externos"
     },
+    "shell-utils": {
+      "title": "shell-utils",
+      "description": "shell utils é um utilitário independente de shell (shell-agnostic) que possibilita executar seus shell scripts globalmente no terminal"
+    },
+    "ashttp": {
+      "title": "ashttp",
+      "description": "Um utilitário de linha de comando feito para simplificar requisições HTTP frequentes e úteis, sem precisar usar clientes HTTP mais complexos como o cURL"
+    },
     "dotfiles": {
       "title": "Meus dotfiles",
       "description": "Dotfiles são arquivos de configuração usados por vários programas que permitem customizar seu comportamento. Esse é o repositório onde guardo as configurações das ferramentas que uso no dia-a-dia"

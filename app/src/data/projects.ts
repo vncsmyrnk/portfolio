@@ -27,6 +27,54 @@ if activeEndpoint.OutputContent == nil {
     ],
   },
   {
+    name: "projects.shell-utils.title",
+    description: "projects.shell-utils.description",
+    language: "sh",
+    codeString: `[...]
+if help_flag_set "$@"; then
+  print_help_for_file "$script_path" || {
+    exit 1
+  }
+  exit 0
+fi
+
+execute_script "$script_path" "$found_script_arguments"
+exit
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/shell-utils",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "shell",
+      "bash",
+      "cli",
+      "completions",
+    ],
+  },
+  {
+    name: "projects.ashttp.title",
+    description: "projects.ashttp.description",
+    language: "go",
+    codeString: `[...]
+req, err := request.ToHTTPRequest(setting)
+if err != nil {
+    fatal("failed to build request: %v", err)
+}
+
+response, err := http.Execute(req)
+if err != nil {
+    fatal("failed to execute request: %v", err)
+}
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/ashttp",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "go",
+      "cli",
+      "http",
+      "client",
+    ],
+  },
+  {
     name: "projects.dotfiles.title",
     description: "projects.dotfiles.description",
     language: "bash",
