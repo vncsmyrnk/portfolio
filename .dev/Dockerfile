@@ -1,6 +1,4 @@
-FROM homebrew/ubuntu22.04
-SHELL ["/bin/bash", "-c"]
+FROM alpine:3.22
 RUN <<EOF
-brew install pnpm just node
+apk add nodejs pnpm neovim just bash
 EOF
-LABEL description=""
