@@ -10,9 +10,30 @@
 
 All my skills and accomplishments showcased in one place.
 
-[Check it out!](https://vncsmyrnk.github.io/portfolio/)
+[Check it out!](https://vncsmyrnk.dev)
 
-## Contributing
+## Service Architecture
+
+```mermaid
+graph TD
+    subgraph "Cloudflare"
+        A[vncsmyrnk.dev] --> B{Google Cloud Run};
+    end
+
+    subgraph "GitHub"
+        C(CI/CD Workflow) -- deploys to --> B;
+        C -- builds and pushes --> D((Container Registry));
+        C -- deploys to --> E[GitHub Pages];
+    end
+
+    subgraph "Google Cloud"
+        B -- runs --> D;
+    end
+
+    F[Dev] -- pushes to main --> C;
+```
+
+Check [the latest action runs](https://github.com/vncsmyrnk/portfolio/actions) for more information.
 
 This project uses [just](https://github.com/casey/just) running development tasks.
 
