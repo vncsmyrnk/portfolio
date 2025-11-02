@@ -57,6 +57,7 @@ function App() {
     "docker",
     "api",
     "rest",
+    "kubernetes",
     "python",
     "integrations",
     "go",
@@ -64,7 +65,6 @@ function App() {
     "ai/ml",
     "ci/cd",
     "git",
-    "pipelines",
   ];
 
   const certificates = [
