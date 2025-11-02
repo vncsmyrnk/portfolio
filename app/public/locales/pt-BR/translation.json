@@ -12,7 +12,7 @@
     "description": "Eu construo infraestruturas de backend escaláveis, seguras e integradas"
   },
   "description": {
-    "text": "Eu sou <underline>Vinicius Mayrink</underline> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo <highlight>Python</highlight>, <highlight>Go</highlight> e <highlight>Node.js</highlight>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escaláveis</strong> e <strong>eficientes</strong>",
+    "text": "Eu sou <underline>Vinicius Mayrink</underline> e sou um desenvolvedor de backend especializado em criar APIs robustas usando um arsenal de ferramentas, incluindo  <highlight>Go</highlight>, <highlight>Node.js</highlight>, <highlight>Python</highlight>. Com um profundo entendimento dos princípios e conceitos de backend, sou proficiente na implementação dos princípios SOLID, arquitetura RESTful e práticas de código limpo para projetar soluções <strong>escaláveis</strong> e <strong>eficientes</strong>",
     "button": "Veja mais"
   },
   "certificates": {
