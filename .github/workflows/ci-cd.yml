@@ -97,6 +97,7 @@ jobs:
           tags: |
             ghcr.io/vncsmyrnk/portfolio:latest
             mayrinkv/portfolio:latest
+            mayrinkv/portfolio:${{ github.sha }}
 
   # https://github.com/google-github-actions/example-workflows/blob/main/workflows/deploy-cloudrun/cloudrun-docker.yml
   deploy-to-cloud-run:
@@ -124,7 +125,7 @@ jobs:
         with:
           service: ${{ vars.SERVICE }}
           region: ${{ vars.REGION }}
-          image: mayrinkv/portfolio:latest
+          image: mayrinkv/portfolio:${{ github.sha }}
 
   purge-deploy-cache:
     if: github.ref == 'refs/heads/main'
