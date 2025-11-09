@@ -16,21 +16,34 @@ All my skills and accomplishments showcased in one place.
 
 ```mermaid
 graph TD
-    subgraph "Cloudflare"
-        A[vncsmyrnk.dev] --> B{Google Cloud Run};
+    subgraph "Cloudflare DNS"
+        A[vncsmyrnk.dev<br/>5-day cache] --> B[Google Cloud Run];
+        G[Cache Purge API] -.-> A;
     end
 
     subgraph "GitHub"
-        C(CI/CD Workflow) -- deploys to --> B;
-        C -- builds and pushes --> D((Container Registry));
-        C -- deploys to --> E[GitHub Pages];
+        C(CI/CD Workflow) --> |"deploys to"| B;
+        C --> |"builds & pushes"| D[hub.docker.com<br/>mayrinkv/portfolio:latest];
+        C --> |"also pushes to"| H[ghcr.io<br/>vncsmyrnk/portfolio:latest];
+        C --> |"deploys to"| E[GitHub Pages];
+        C --> |"purges cache"| G;
     end
 
     subgraph "Google Cloud"
-        B -- runs --> D;
+        B --> |"pulls image"| D;
     end
 
-    F[Dev] -- pushes to main --> C;
+    subgraph "Docker Registries"
+        D;
+        H;
+    end
+
+    F[Developer] --> |"pushes to main"| C;
+    
+    style A fill:#ff9800
+    style D fill:#2196f3
+    style H fill:#4caf50
+    style B fill:#9c27b0
 ```
 
 Check [the latest action runs](https://github.com/vncsmyrnk/portfolio/actions) for more information.
