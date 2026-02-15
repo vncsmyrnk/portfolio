@@ -31,6 +31,7 @@
   "projects": {
     "title": "Projetos",
     "button-to-github": "Veja no GitHub",
+    "button-to-pergamum": "Veja no Pergamum",
     "fakeapi": {
       "title": "Fake API",
       "description": "Fake API permite configurar e executar rapidamente um servidor RESTful com endpoints e respostas personalizáveis. Isso a torna uma ferramenta ideal para testes de software sem depender de serviços externos"
@@ -38,6 +39,10 @@
     "shell-utils": {
       "title": "shell-utils",
       "description": "shell utils é um utilitário independente de shell (shell-agnostic) que possibilita executar seus shell scripts globalmente no terminal"
+    },
+    "tcc": {
+      "title": "TCC Graduação",
+      "description": "Este trabalho realiza uma análise comparativa entre o método tradicional de Dockerfiles e o gerenciador de pacotes Nix na construção de imagens de containers."
     },
     "ashttp": {
       "title": "ashttp",

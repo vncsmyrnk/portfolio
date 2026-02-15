@@ -51,6 +51,30 @@ exit
     ],
   },
   {
+    name: "projects.tcc.title",
+    description: "projects.tcc.description",
+    language: "tex",
+    codeString: `[...]
+\\newpage
+\\selectlanguage{english}
+\\begin{abstract}
+\\noindent
+Building Docker images through traditional methods presents challenges related to size, security, and reproducibility, limiting efficiency in production environments.
+\\\\textbf{\\keyword{Keywords: }} Docker. Nix. Containers. Package management. Security.
+\\end{abstract}
+[...]`,
+    linkUrl: "https://bib.pucminas.br/acervo/571388",
+    linkDescription: "projects.button-to-pergamum",
+    tags: [
+      "nix",
+      "docker",
+      "containers",
+      "package managers",
+      "security",
+      "ci/cd",
+    ],
+  },
+  {
     name: "projects.ashttp.title",
     description: "projects.ashttp.description",
     language: "go",

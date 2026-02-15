@@ -31,6 +31,7 @@
   "projects": {
     "title": "Projects",
     "button-to-github": "See on GitHub",
+    "button-to-pergamum": "See on Pergamum",
     "fakeapi": {
       "title": "Fake API",
       "description": "Fake API allows you to quickly set up and run a RESTful API server with customizable endpoints and responses. This makes it an ideal tool for software testing without relying on external services"
@@ -38,6 +39,10 @@
     "shell-utils": {
       "title": "shell-utils",
       "description": "shell utils is a shell-agnostic utility tool designed to make your scripts accessible everywhere using the util command"
+    },
+    "tcc": {
+      "title": "Undergraduate Thesis",
+      "description": "This study provides a comparative analysis between traditional Dockerfiles and the Nix package manager for building container images."
     },
     "ashttp": {
       "title": "ashttp",
