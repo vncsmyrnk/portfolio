@@ -17,7 +17,7 @@ All my skills and accomplishments showcased in one place.
 ```mermaid
 graph TD
     subgraph "Cloudflare DNS"
-        A[vncsmyrnk.dev<br/>5-day cache] --> B[Google Cloud Run];
+        A[vncsmyrnk.dev<br/>Cached] --> B[Google Cloud Run];
         G[Cache Purge API] -.-> A;
     end
 
