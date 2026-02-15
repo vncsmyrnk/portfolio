@@ -23,7 +23,7 @@ graph TD
 
     subgraph "GitHub"
         C(CI/CD Workflow) --> |"deploys to"| B;
-        C --> |"builds & pushes"| D[hub.docker.com<br/>mayrinkv/portfolio:latest];
+        C --> |"builds & pushes"| D[hub.docker.com<br/>vncsmyrnk/portfolio:latest];
         C --> |"also pushes to"| H[ghcr.io<br/>vncsmyrnk/portfolio:latest];
         C --> |"deploys to"| E[GitHub Pages];
         C --> |"purges cache"| G;
