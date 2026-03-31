@@ -9,7 +9,7 @@ RUN pnpm run build
 
 FROM nginx:alpine
 COPY --from=build /var/app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 ENTRYPOINT ["nginx"]
 CMD ["-g", "daemon off;"]
 EXPOSE 80
