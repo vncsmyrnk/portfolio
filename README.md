@@ -48,11 +48,12 @@ graph TD
 
 Check [the latest action runs](https://github.com/vncsmyrnk/portfolio/actions) for more information.
 
+## Development
+
 This project uses [just](https://github.com/casey/just) running development tasks.
 
-```bash
-just build-dev-env run-dev-env # Builds and runs the dev container
-just dev-run # Runs the app (must be run inside the container)
+```sh
+just run
 ```
 
 The local environment should be available at http://localhost:3000.

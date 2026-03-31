@@ -13,9 +13,6 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     container: node:21-alpine
-    defaults:
-      run:
-        working-directory: ./app
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,8 +32,8 @@ jobs:
         with:
           name: app
           path: |
-            ./app/dist
-            !./app/dist/**/*.md
+            ./dist
+            !./dist/**/*.md
 
   deploy-to-gh-pages:
     if: github.ref == 'refs/heads/main'

@@ -1,8 +1,6 @@
 default:
   just --list
 
-path := "{{source_directory()}}/app"
-
 build-dev-env:
   docker build -t portfolio-dev .dev
 
@@ -15,16 +13,16 @@ run-dev-env:
     portfolio-dev bash
 
 install:
-  cd "{{source_directory()}}/app" && pnpm install
+  pnpm install
 
 lint:
-  cd "{{source_directory()}}/app" && pnpm run lint
+  pnpm run lint
 
-dev-run: install lint
-  cd "{{source_directory()}}/app" && pnpm run dev
+run: install lint
+  pnpm run dev
 
 build: install lint
-  cd "{{source_directory()}}/app" && pnpm run build
+  pnpm run build
 
 deploy-to-koyeb:
   @./deploy-to-koyeb.sh
