@@ -1,11 +1,9 @@
 FROM node:25-alpine AS build
 WORKDIR /var/app/
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
+# https://pnpm.io/installation#in-a-docker-container
+RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.shrc" SHELL="$(which sh)" sh -
 COPY . .
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
-RUN pnpm run build
+RUN source "$HOME/.shrc" && pnpm install --frozen-lockfile && pnpm run build
 
 FROM nginx:alpine
 COPY --from=build /var/app/dist /usr/share/nginx/html
