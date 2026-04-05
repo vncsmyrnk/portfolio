@@ -42,7 +42,7 @@
     },
     "gwin": {
       "title": "gwin",
-      "description": "Um utilitário capaz gereenciar aplicações e janelas no GNOME Wayland, usando como base a a interface D-Bus exposta pela extensão window-calls."
+      "description": "Um utilitário capaz gerenciar aplicações e janelas no GNOME Wayland, usando como base a a interface D-Bus exposta pela extensão window-calls."
     },
     "tcc": {
       "title": "TCC Graduação",
