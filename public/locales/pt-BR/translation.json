@@ -40,6 +40,10 @@
       "title": "shell-utils",
       "description": "shell utils é um utilitário independente de shell (shell-agnostic) que possibilita executar seus shell scripts globalmente no terminal"
     },
+    "gwin": {
+      "title": "gwin",
+      "description": "Um utilitário capaz gereenciar aplicações e janelas no GNOME Wayland, usando como base a a interface D-Bus exposta pela extensão window-calls."
+    },
     "tcc": {
       "title": "TCC Graduação",
       "description": "Este trabalho realiza uma análise comparativa entre o método tradicional de Dockerfiles e o gerenciador de pacotes Nix na construção de imagens de containers."

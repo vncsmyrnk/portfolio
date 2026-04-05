@@ -51,6 +51,30 @@ exit
     ],
   },
   {
+    name: "projects.gwin.title",
+    description: "projects.gwin.description",
+    language: "zig",
+    codeString: `[...]
+const window_list = manager.list(allocator) catch
+    fatal("Failed to list windows.\n", .{});
+defer window_list.deinit();
+
+const ws = window_list.switchableWindows();
+if (ws.len == 0) {
+    fatal("There are no other windows opened.\n", .{});
+}
+[...]`,
+    linkUrl: "https://github.com/vncsmyrnk/gwin",
+    linkDescription: "projects.button-to-github",
+    tags: [
+      "zig",
+      "gnome",
+      "cli",
+      "rofi",
+      "aur",
+    ],
+  },
+  {
     name: "projects.tcc.title",
     description: "projects.tcc.description",
     language: "tex",
