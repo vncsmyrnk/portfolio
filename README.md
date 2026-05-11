@@ -1,12 +1,13 @@
-# My portfolio
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)
+![NodeJS](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fvncsmyrnk%2Fportfolio%2Fraw%2Frefs%2Fheads%2Fmain%2Fpackage.json&query=%24.engines.node&style=plastic&logo=node.js&label=nodejs&color=green)
+![PNPM](https://img.shields.io/badge/dynamic/regex?url=https%3A%2F%2Fgithub.com%2Fvncsmyrnk%2Fportfolio%2Fraw%2Frefs%2Fheads%2Fmain%2Fpackage.json&search=%22packageManager%22%3A%20%22pnpm%5C%40(.*)%22&replace=v%241&style=plastic&logo=pnpm&label=pnpm&color=yellow)
+![React](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fgithub.com%2Fvncsmyrnk%2Fportfolio%2Fraw%2Frefs%2Fheads%2Fmain%2Fpnpm-lock.yaml&query=%24.importers.'.'.dependencies.react.version&prefix=v&style=plastic&logo=react&label=react)
+![TypeScript](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fgithub.com%2Fvncsmyrnk%2Fportfolio%2Fraw%2Frefs%2Fheads%2Fmain%2Fpnpm-lock.yaml&query=%24.importers.'.'.devDependencies.typescript.version&prefix=v&style=plastic&logo=typescript&label=typescript&color=blue)
+![Vite](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fgithub.com%2Fvncsmyrnk%2Fportfolio%2Fraw%2Frefs%2Fheads%2Fmain%2Fpnpm-lock.yaml&query=%24.importers.'.'.devDependencies.vite.version&prefix=v&style=plastic&logo=vite&label=vite&color=7131d1)
 <br>
 ![CI/CD workflow](https://github.com/vncsmyrnk/portfolio/actions/workflows/ci-cd.yml/badge.svg)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+# My portfolio
 
 All my skills and accomplishments showcased in one place.
 
@@ -39,7 +40,7 @@ graph TD
     end
 
     F[Developer] --> |"pushes to main"| C;
-    
+
     style A fill:#ff9800
     style D fill:#2196f3
     style H fill:#4caf50
