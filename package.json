@@ -3,8 +3,14 @@
   "homepage": "https://vncsmyrnk.github.io/portfolio/",
   "private": true,
   "version": "0.0.1",
+  "packageManager": "pnpm@10.33.0",
   "type": "module",
+  "engines": {
+    "node": ">=26.1.0",
+    "pnpm": ">=10.33.0"
+  },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev-bundle": "vite --host --port 3000",
     "watch-tsc": "tsc --watch --noEmit",
     "dev": "run-p dev-bundle watch-tsc",
