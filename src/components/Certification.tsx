@@ -7,7 +7,7 @@ type CertificationProps = {
   url: string;
 };
 
-function Certification({
+export function Certification({
   description,
   name,
   img,
@@ -57,5 +57,3 @@ function Certification({
     </a>
   );
 }
-
-export default Certification;

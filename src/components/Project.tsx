@@ -11,7 +11,7 @@ type ProjectProps = {
   tags: string[];
 };
 
-function Project({
+export function Project({
   codeString,
   description,
   name,
@@ -53,5 +53,3 @@ function Project({
     </div>
   );
 }
-
-export default Project;

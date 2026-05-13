@@ -4,7 +4,7 @@ type DarkModeSwitchProps = {
   className?: string;
 };
 
-function DarkModeSwitch({ className }: DarkModeSwitchProps) {
+export function DarkModeSwitch({ className }: DarkModeSwitchProps) {
   const toggleToDarkMode = () => {
     document.documentElement.classList.add("dark");
   };
@@ -63,5 +63,3 @@ function DarkModeSwitch({ className }: DarkModeSwitchProps) {
     </div>
   );
 }
-
-export default DarkModeSwitch;

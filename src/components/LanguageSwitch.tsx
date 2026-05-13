@@ -6,7 +6,7 @@ type LanguageSwitchProps = {
   className?: string;
 };
 
-function LanguageSwitch({ className }: LanguageSwitchProps) {
+export function LanguageSwitch({ className }: LanguageSwitchProps) {
   const [areDropDownOptionsVisible, setDropDownOptionsVisible] =
     useState(false);
   const [language, setLanguage] = useState(i18n.language);
@@ -86,5 +86,3 @@ function LanguageSwitch({ className }: LanguageSwitchProps) {
     </div>
   );
 }
-
-export default LanguageSwitch;
