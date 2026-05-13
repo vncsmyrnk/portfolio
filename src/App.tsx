@@ -7,10 +7,13 @@ import {
 import { FaEnvelope, FaGithub, FaLinkedin, FaReact } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { SiVite } from "react-icons/si";
-import Carousel from "react-multi-carousel";
+import CarouselWrapper from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useTranslation, Trans } from "react-i18next";
 import { projects } from "@/data";
+
+// @ts-expect-error - Vite 8 CJS interop workaround
+const Carousel = CarouselWrapper.default || CarouselWrapper;
 
 function App() {
   const { t } = useTranslation();
