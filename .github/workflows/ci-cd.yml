@@ -113,7 +113,7 @@ jobs:
             vncsmyrnk/portfolio
             ghcr.io/vncsmyrnk/portfolio
           tags: |
-            type=raw,value=prod,enable=${{ github.ref == 'refs/heads/main' }}
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
             type=raw,value=sandbox,enable=${{ inputs.sandbox == true || startsWith(github.ref_name, 'sandbox/') }}
 
       - name: Build and push
