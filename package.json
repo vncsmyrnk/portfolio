@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "@eslint/compat": "^2.1.0",
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
     "@fontsource/ubuntu": "^5.2.8",
     "@types/react-syntax-highlighter": "^15.5.13",
     "flag-icons": "^7.5.0",
@@ -44,7 +46,7 @@
     "@typescript-eslint/parser": "^8.59.4",
     "@vitejs/plugin-react": "^5.2.0",
     "autoprefixer": "^10.5.0",
-    "eslint": "^9.39.4",
+    "eslint": "^10.4.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "postcss": "^8.5.14",
