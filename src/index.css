@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Ubuntu Sans Mono", "Segoe UI",
+  font-family: "Ubuntu Sans Mono", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

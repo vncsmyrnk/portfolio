@@ -17,9 +17,6 @@ importers:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.4.0(jiti@1.21.7))
-      '@fontsource/ubuntu':
-        specifier: ^5.2.8
-        version: 5.2.8
       '@types/react-syntax-highlighter':
         specifier: ^15.5.13
         version: 15.5.13
@@ -264,9 +261,6 @@ packages:
     resolution: {integrity: sha512-vCrycs895JiwMShLryzUGEPjzA6hJ5RF+5RoTcG/oNbB2ScK1yi7NHLdXBtr3vD7dNdxIyxCgtSHbYUojHz0yg==}
     peerDependencies:
       react: '>= 0.14.0'
-
-  '@fontsource/ubuntu@5.2.8':
-    resolution: {integrity: sha512-esSJCpgigwWOm4Ug9f7AMozUyBq5Iobea5C9QYsl2OlCb62wZABBUbXahHLdFv5Ru4lJCD9tUX6xEAeLwUTNBg==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -2252,8 +2246,6 @@ snapshots:
       prismjs: 1.30.0
       react: 19.2.6
       refractor: 4.9.0
-
-  '@fontsource/ubuntu@5.2.8': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
