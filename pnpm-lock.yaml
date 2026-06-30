@@ -45,8 +45,8 @@ importers:
         specifier: ^17.0.7
         version: 17.0.7(i18next@26.2.0(typescript@6.0.3))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(typescript@6.0.3)
       react-icons:
-        specifier: ^5.6.0
-        version: 5.6.0(react@19.2.6)
+        specifier: ^5.7.0
+        version: 5.7.0(react@19.2.6)
       react-multi-carousel:
         specifier: ^2.8.6
         version: 2.8.6
@@ -1673,8 +1673,8 @@ packages:
       typescript:
         optional: true
 
-  react-icons@5.6.0:
-    resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
+  react-icons@5.7.0:
+    resolution: {integrity: sha512-LBLy340Rzqy6+/yVhZKT3B/QpP1BZaesGqasf09HPOBzRarcDIFH0WwXlXQfE7q7ipxK4MSiC5DIBWURCny6fw==}
     peerDependencies:
       react: '*'
 
@@ -3604,7 +3604,7 @@ snapshots:
       react-dom: 19.2.6(react@19.2.6)
       typescript: 6.0.3
 
-  react-icons@5.6.0(react@19.2.6):
+  react-icons@5.7.0(react@19.2.6):
     dependencies:
       react: 19.2.6
 
